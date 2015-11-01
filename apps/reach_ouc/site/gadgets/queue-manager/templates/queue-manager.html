@@ -1,0 +1,423 @@
+<div id="queue-view" class="gadget-row row-fluid">
+  <div class="header-h4" data-class="gadgetSectionHeader">
+    <span class="header-arrow arrow-icon arrow-down align-left"></span>
+
+    <h4 class="gadget-row-title span9 tight">Queue View</h4>
+  </div>
+  <div class="section-content">
+
+   <table id="queue-table">
+    <thead>
+      <tr>
+        <th id="queue-name-column">
+          <div id="queue-name-column">
+            Queue Name
+          </div>
+        </th>
+        <th class="empty-cell"><div class="empty-cell"></div></th>
+        <th colspan="2" id="calls-column">
+          <div id="calls-column">
+            Calls In Queue
+          </div>
+        </th>
+        <th class="empty-cell small"></th>
+
+        <th id="queue-stats-column" colspan="7">
+          <form class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label" for="qm-time-dropdown">Queue Statistics</label>
+              <div class="controls pull-right">
+                <label class="last-hour styled">
+                  <select id="qm-time-dropdown" data-class="qmQueueStatsCoverage">
+                  </select>
+                </label>
+              </div>
+            </div>
+          </form>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr id="header-row">
+       <td class="skills border-top-none">
+
+        <button class="phone-button not-yet-implemented" data-class="qmQueueMediaFilterVoice">
+          <i class="icon-phone_mobile"></i>
+        </button>
+        <button class="email-button not-yet-implemented" data-class="qmQueueMediaFilterEmail">
+          <i class="icon-mail"></i>
+        </button>
+        <button class="voicemail-button not-yet-implemented" data-class="qmQueueMediaFilterVoicemail">
+          <i class="icon-voicemail"></i>
+        </button>
+      </td>
+      <td class="empty-cell"></td>
+      <td class="ciq" colspan="2"><!-- remove colspan when expec-wait is visible-->
+        <div class="bg-lightblue"><!-- class="ciq" -->
+          CIQ
+        </div>
+      </td>
+      <td class="expec-wait not-yet-implemented">
+        <div class="expec-wait bg-lightblue not-yet-implemented">
+          Expected Wait
+        </div>
+      </td>
+      <td class="empty-cell small"></td>
+      <td class="speed-answer">
+        <div class="bg-lightblue speed-answer">
+          &Oslash; Speed Answer
+        </div>
+      </td>
+
+      <td class="longest">
+        <div class="longest bg-lightblue">
+          Longest Wait
+        </div>
+      </td>
+
+      <td class="connected">
+        <div class="connected bg-lightgreen">
+          Connected
+        </div>
+      </td>
+
+      <td class="completed">
+        <div class="completed bg-lightgreen">
+          Completed
+        </div>
+      </td>
+
+      <td class="empty-cell smallest"></td>
+
+      <td class="abandon-time">
+        <div class="abandon-time bg-lightblue">
+          &Oslash; Abandon Time
+        </div>
+      </td>
+
+      <td class="abandoned">
+        <div class="abandoned bg-orange">
+          Abandoned
+        </div>
+      </td>
+    </tr>
+    <!--/END HEADER ROW -->
+
+    <!-- ko class: qmQueues -->
+    <tr class="data-row">
+      <td class="queue-info">
+        <div>
+          <span class="header-arrow arrow-icon arrow-down align-left" data-class="qmQueueShowLinesIcon"></span>
+          <h4 class="queue-row-title span9 tight" data-class="qmQueueName"></h4>
+        </div>
+        <div class="section-content mini" data-class="qmQueueLinesContainer">
+          <table class="contact-table">
+            <thead>
+              <tr>
+                <th id="ext">Ext.</th>
+                <th id="did">DID N&deg;:</th>
+                <th id="customer">Customer:</th>
+              </tr>
+            </thead>
+            <tbody data-class="qmQueueLines">
+              <tr>
+                <td data-class="qmQueueLineExt">--</td>
+                <td data-class="qmQueueLineDidN">--</td>
+                <td data-class="qmQueueLineCustomer">--</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+      <td class="empty-cell"></td>
+      <td class="ciq bg-yellow" colspan="2" data-class="qmQueueCiq"><!-- remove colspan when expec-wait is visible-->
+        <table class="ciq not-yet-implemented">
+          <tr>
+            <td colspan="2" class="bg-yellow">
+              <span class="digits">--</span>
+            </td>
+          </tr>
+          <tr class="ciq-bottom">
+            <td class="bg-lightblue">
+              --
+            </td>
+            <td class="bg-lightblue">
+              --
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td class="expec-wait not-yet-implemented" data-class="qmQueueExpectedWait">
+        --
+      </td>
+      <td class="empty-cell small"></td>
+      <td class="speed-answer bg-lightblue" data-class="qmQueueASpeedAnswer">
+        --
+      </td>
+
+      <td class="longest bg-lightblue"data-class="qmQueueLongestWait">
+        --
+      </td>
+
+      <td class="connected bg-lightgreen" data-class="qmQueueConnected">
+        --
+      </td>
+
+      <td class="completed bg-lightgreen" data-class="qmQueueCompleted">
+        --
+      </td>
+
+      <td class="empty-cell smallest"></td>
+
+      <td class="abandon-time bg-lightblue" data-class="qmQueueAAbandonTime">
+        --
+      </td>
+
+      <td class="abandoned bg-orange" data-class="qmQueueAbandoned">
+        --
+      </td>
+    </tr>
+    <!-- /ko -->
+
+
+
+
+  </tbody>
+</table>
+</div>
+</div><!-- END .gadget-row -->
+
+
+<div class="gadget-row">
+  <div class="header-h4" data-class="gadgetSectionHeader">
+    <span class="header-arrow arrow-icon arrow-down align-left"></span>
+
+    <h4 class="gadget-row-title span9 tight">Call View</h4>
+  </div>
+
+  <div class="row-fluid section-content">
+    <div id="filter" class="span3">
+      <table id="filter-table">
+        <tr>
+          <td>Filter</td>
+        </tr>
+      </table>
+
+      <!--<input id="call-search" type="text" class="row-fluid very-tight" placeholder="Search…" data-class="filterByNameInput">-->
+
+      <div class="filters first clearfix">
+        <span>Queue / Media</span>
+        <label class="styled" data-class="qmCallQueueFilterBg">
+          <select data-class="qmCallQueueFilter">
+            <option>Any Queue</option>
+          </select>
+        </label>
+
+        <div class="ico-div">
+
+          <button class="phone-button" data-class="qmCallMediaFilterVoice">
+            <i class="icon-phone_mobile"></i>
+          </button>
+          <button class="email-button not-yet-implemented" data-class="qmCallMediaFilterEmail">
+            <i class="icon-mail"></i>
+          </button>
+          <button class="voicemail-button" data-class="qmCallMediaFilterVoicemail">
+            <i class="icon-voicemail"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="filters clearfix">
+        <span>Line</span>
+        <label class="styled" data-class="qmCallLineFilterBg">
+          <select data-class="qmCallLineFilter">
+            <option>Any Line</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="filters clearfix">
+        <span>Customer</span>
+        <label class="styled" data-class="qmCallCustomerFilterBg">
+          <select data-class="qmCallCustomerFilter">
+            <option>Any Customer</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="filters clearfix">
+        <span>Skill Requirement</span>
+        <label class="styled" data-class="qmCallSkillFilterBg">
+          <select data-class="qmCallSkillFilter">
+            <option>Any Skill</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="filters clearfix">
+        <span>Node</span>
+        <label class="styled" data-class="qmCallNodeFilterBg">
+          <select data-class="qmCallNodeFilter">
+            <option>Any Node</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="span9" id="calls-table-container">
+      <table id="call-view-table">
+        <thead>
+          <tr class="header-row">
+            <td class="arrow not-yet-implemented"><div class="arrow"><i class=" icon-arrow-right grey"></i></div></td>
+
+            <td class="media-customer" data-class="qmCallsSortByCustomer">
+              <div class="media-customer">Media / Customer</div>
+            </td>
+
+            <td class="line" data-class="qmCallsSortByLine">
+              <div class="line">Line</div>
+            </td>
+
+            <td class="skills-req" data-class="qmCallsSortBySkillsReq">
+              <div class="skills-req">Skills Req.</div>
+            </td>
+
+            <td class="ag-match" data-class="qmCallsSortByAgMatch">
+              <div class="ag-match">Ag. Match</div>
+            </td>
+
+            <td class="time-in-q" data-class="qmCallsSortByTInQueue">
+              <div class="time-in-q">T in Queue</div>
+            </td>
+
+            <td class="expec-wait not-yet-implemented" data-class="qmCallsSortByExpecWait">
+              <div class="expec-wait">Expected Wait</div>
+            </td>
+          </tr>
+          <tr id="calls-arrows">
+            <td class="arrow not-yet-implemented">
+            </td>
+            <td class="media-customer">
+              <div>
+                <span class="span4">
+                 <i class="icon-arrow-down left-justified" data-class="qmCallsSortByCustomer"></i>
+               </span>
+               <span class="span8"></span>
+             </div>
+           </td>
+           <td class="line">
+            <div>
+              <i class="icon-arrow-down" data-class="qmCallsSortByLine"></i>
+            </div>
+          </td>
+          <td class="skills-req">
+            <div>
+              <i class="icon-arrow-down" data-class="qmCallsSortBySkillsReq"></i>
+            </div>
+          </td>
+          <td class="ag-match">
+            <div>
+              <i class="icon-arrow-down" data-class="qmCallsSortByAgMatch"></i>
+            </div>
+          </td>
+          <div>
+            <td class="time-in-q">
+              <div>
+                <i class="icon-arrow-down" data-class="qmCallsSortByTInQueue"></i>
+              </div>
+            </td>
+            <td class="expec-wait not-yet-implemented">
+              <div>
+                <i class="icon-arrow-down" data-class="qmCallsSortByExpecWait"></i>
+              </div>
+            </td>
+          </tr>
+        </thead>
+        <tbody data-class="qmCalls">
+
+
+          <tr class="bg-lightblue" data-class="qmCallRow">
+            <td class="arrow not-yet-implemented">
+              <div class="arrow">
+                <i class="icon-arrow-right grey" data-class="qmCallShowTransferIcon"></i>
+              </div>
+            </td>
+
+            <td class="media-customer">
+              <div class="media-customer">
+                <table>
+                  <td class="media-icon">
+
+                    <!--options: icon-phone, icon-voicemail, icon-email -->
+                    <i class="icon-phone" data-class="qmCallMedia"></i>
+
+                    <!--<span class="media-ico-phone" data-class="qmCallMedia"></span>-->
+                  </td>
+                  <td class="media-customer-data">
+                    <span class="media-ico-client" >
+                      <img data-class="qmCallCustomerAvatar">
+                    </span>
+                    <strong data-class="qmCallCustomerName"></strong>
+                    <br/>
+                    <span data-class="qmCallCustomerCallerId"></span>
+                  </td>
+                </table>
+              </div>
+            </td>
+            <td class="line">
+              <div class="line" data-class="qmCallLine">--</div>
+            </td>
+            <td class="skills-req">
+              <div class="skills-req" data-class="qmCallSkillsReq">--</div>
+            </td>
+            <td class="ag-match call-digits">
+              <div class="ag-match" data-class="qmCallAgMatch">--</div>
+            </td>
+            <td class="time-in-q call-digits">
+              <div class="time-in-q" data-class="qmCallTInQueue">--</div>
+            </td>
+            <td class="expec-wait call-digits not-yet-implemented">
+              <div class="expec-wait" data-class="qmCallExpecWait">--</div>
+            </td>
+          </tr>
+
+          <tr class="transfer-row bg-lightgray not-yet-implemented" data-class="qmCallTransferRow"> <!-- transfer-row -->
+            <td colspan="7">
+
+              <form class="form-horizontal">
+                <div class="row-fluid">
+                  <span class="span3 pulled">
+                    <i class="icon-transfer-arrow-with-border"></i>
+                    <p class="transfer">Transfer to:</p>
+                  </span>
+
+                  <span class="span3">
+                   <label class="styled">
+                     <select data-class="filterOptionAny">
+                      <option>Queue...</option>
+                    </select>
+                  </label>
+                </span>
+                <span class="span3">
+                 <label class="styled">
+                   <select data-class="filterOptionAny">
+                    <option>Agent...</option>
+                  </select>
+                </label>
+              </span>
+              <span class="span3">
+               <button class="transfer-voicemail-button">
+                <i class="icon-voicemail"></i><span> Voicemail</span>
+              </button>
+            </span>
+
+          </div>
+        </form>
+      </td>
+    </tr> <!-- END transfer-row -->
+  </tbody>
+</table>
+</div>
+</div>
+</div><!-- END .gadget-row -->

@@ -1,0 +1,14 @@
+{application, reach_dialplan,
+ [
+  {description, "OpenACD Agent Dialplan Session Plug-in"},
+  {vsn, "2.0.0"},
+  {registered, [oacd_dialplan_sup, oacd_dialplan_listener]},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  reach_core
+                 ]},
+  {modules, [@ERLAPP_MODS_LIST@]},
+  {mod, { oacd_dialplan_app, []}},
+  {env, []}
+ ]}.

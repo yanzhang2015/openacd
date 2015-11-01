@@ -1,0 +1,9 @@
+{release, {reach, "@REL_VSN@"}, [
+	reach,
+	{lager, "2.0.0", '>='},
+	{ejrpc2, "0.1.0", '>='}
+]}.
+
+{lib_dirs, ["deps"]}.
+{include_src, false}.
+{extended_start_script, true}.

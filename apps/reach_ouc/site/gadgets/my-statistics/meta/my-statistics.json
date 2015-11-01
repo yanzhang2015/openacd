@@ -1,0 +1,11 @@
+{
+  "id": "my-statistics-gadget",
+  "title": "My Statistics",
+  "stylesheet": "gadgets/my-statistics/styles/my-statistics.css",
+  "raw_stylesheet": "gadgets/my-statistics/styles/my-statistics.less",
+  "container_class": "my-statistics-gadget",
+  "size_x": 2,
+  "width": 540,
+  "init_height": 168,
+  "supervisor": false
+}

@@ -1,0 +1,34 @@
+{application, @PACKAGE_NAME@, [
+	{description, "Call queuing and routing system"},
+	{vsn, "@PACKAGE_VERSION@"},
+	{modules, []},
+	{registered, [
+		agent_connection_sup,
+		agent_manager,
+		agent_sup,
+		cdr,
+		cpx_monitor,
+		cpx_monitor_passive,
+		cpx_supervisor,
+		cpxlog,
+		dispatch_manager,
+		gen_cdr_dumper,
+		integration, % TODO potential point of conflict w/ other apps?
+		queue_manager,
+		routing_sup
+	]},
+	{mod, {cpx, []}},
+	{env, []},
+	{applications, [
+		kernel,
+		stdlib,
+		mnesia,
+		crypto,
+		public_key,
+%		ejprc2,
+		gproc,
+		lager
+	]},
+	{start_phases, []},
+	{included_applications, []}
+]}.

@@ -1,0 +1,116 @@
+h1,h2, legend
+{
+  text-transform:uppercase;
+  font-size: 14px;
+}
+
+textarea,
+input[type="text"],
+input[type="password"]
+{
+	width:178px;
+	height:25px;
+border-radius:0px;
+box-shadow: 1px 1px 0px #666666;
+padding-top: 2px;
+margin-top:2px;
+background-color: #fff;
+}
+
+.form-horizontal .control-label
+{
+	width: 90px;
+  padding-top: 8px;
+}
+
+.form-horizontal .controls
+{
+	margin-left: 100px;
+	margin-bottom: 20px;
+}
+
+#login-button
+{
+	margin-top: 15px;
+	width: 88px;
+	margin-left: 4px;
+}
+
+#checkbox-label
+{
+	padding-left: 22px;
+}
+
+h1
+{
+  line-height: 33px;
+}
+
+#login-fieldset
+{
+	margin-top:8px;
+}
+
+#username-control-group
+{
+	padding-top: 8px;
+}
+
+#advanced-options-title {
+  margin-top: -30px;
+  position: relative;
+  top: 10px;
+}
+
+#advanced-options-title span {
+  background-color: #f5f5f5;
+  margin-left: 10px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+#advanced-options-title i.icon-arrow-right {
+  font-size: 10px;
+  line-height: 16px;
+}
+#advanced-options-title i.icon-arrow-down {
+  font-size: 7px;
+  line-height: 15px;
+}
+
+#advanced-options {
+  border: 1px solid #E5E5E5;
+  padding-top: 16px;
+  display: none;
+}
+
+.well
+{
+	min-height:300px;
+	height: 90%;
+}
+
+.well.login {
+  min-height:345px;
+}
+.well.login.advanced {
+  min-height:400px;
+}
+
+.control-radio {
+  float: left;
+  margin: 10px 60px 10px 0;
+}
+
+.control-radio label {
+  display: inline;
+}
+
+.control-submit {
+  padding: 20px 30px 0 0;
+  clear: both;
+}
+
+.control-submit .btn {
+  width: 88px;
+}

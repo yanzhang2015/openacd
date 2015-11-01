@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>OpenUC Reach {% block title %}{% endblock %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta http-equiv="content-type" content="text/html; charset=us-ascii">
+
+<link rel="shortcut icon" type="{{ static_root }}/image/png" href="/images/favicon.png">
+
+<link rel="stylesheet" media="screen" href="{{ static_root }}/styles/bootstrap.css">
+<link rel="stylesheet" media="screen" href="{{ static_root }}/styles/icomoon.css">
+<link rel="stylesheet" media="screen" href="{{ static_root }}/styles/main.css">
+
+{% block head %}{% endblock %}
+
+<script type="text/javascript">
+var DEBUG = {{ is_debug }};
+</script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <ul class="nav" id="topbar-ul">
+            {% block nav %}{% endblock %}
+          </ul>
+
+          <div class="nav pull-right" id="navbar-datetime">
+            <span class="date" data-class="dateStr"></span>
+            <span class="time" data-class="timeStr"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-fixed-top" id="banner">
+      <div class="container-fluid alert alert-block alert-info">
+        <a class="close">&times;</a>
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="content">
+    <!-- content -->
+    {% block content %}{% endblock %}
+    <!-- /content -->
+  </div>
+
+  <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "id": "agent-state-gadget",
+  "title": "Agent State",
+  "stylesheet": "gadgets/agent-state/styles/agent-state.css",
+  "raw_stylesheet": "gadgets/agent-state/styles/agent-state.less",
+  "container_class": "agent-state-gadget",
+  "size_x": 1,
+  "width": 260,
+  "init_height": 248,
+  "supervisor": false
+}

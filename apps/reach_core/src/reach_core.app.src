@@ -1,0 +1,37 @@
+{application, reach_core, [
+	{description, "Call queuing and routing system"},
+	{vsn, "2.0.0"},
+	{modules, [@ERLAPP_MODS_LIST@]},
+	{registered, [
+		agent_connection_sup,
+		agent_manager,
+		agent_sup,
+		cdr,
+		cpx_monitor,
+		cpx_monitor_passive,
+		cpx_supervisor,
+		cpxlog,
+		dispatch_manager,
+		gen_cdr_dumper,
+		integration, % TODO potential point of conflict w/ other apps?
+		queue_manager,
+		routing_sup
+	]},
+	{mod, {cpx, []}},
+	{env, []},
+	{applications, [
+		kernel,
+		stdlib,
+		mnesia,
+		crypto,
+		public_key,
+		ejrpc2,
+		gproc,
+		lager,
+        appmon,
+        runtime_tools,
+        gen_leader
+	]},
+	{start_phases, []},
+	{included_applications, []}
+]}.

@@ -1,0 +1,82 @@
+{
+  "timer": {
+    "isStarted": false,
+    "totalSeconds": 0,
+    "hasHours": true,
+    "isCountdown": false,
+    "countdownSeconds": 0,
+    "isCountdownOver": false,
+    "currentSeconds": 0,
+    "seconds": 0,
+    "minutes": 0,
+    "hours": 0,
+    "stringValue": "00:00:00"
+  },
+  "releaseReasons": [
+    {
+      "label": "Release 0",
+      "value": "OpenAcdReleaseCode1"
+    },
+    {
+      "label": "Release 1",
+      "value": "OpenAcdReleaseCode2"
+    },
+    {
+      "label": "Release 2",
+      "value": "OpenAcdReleaseCode3"
+    }
+  ],
+  "releasedSince": "2013-01-16T04:39:43.412Z",
+  "lastReleaseReason": null,
+  "isProfileVisible": false,
+  "isEditingProfile": false,
+  "isViewingProfile": true,
+  "profilePic": "https://oacddev.ezuce.com/sipxconfig/rest/avatar/1001",
+  "hasProfilePic": false,
+  "firstName": "first1001",
+  "lastName": "last1001",
+  "fullName": "first1001 last1001",
+  "position": null,
+  "manager": "manager1001",
+  "phoneInternal": "1001",
+  "phoneDirect": "1001",
+  "phoneCell": "1002",
+  "email": "1001@oacddev.ezuce.com",
+  "homeAddressStreet": "Unit 2933 Joy Nostalg Centre",
+  "homeAddressCity": "Pasig City",
+  "homeAddressState": "Metro Manila",
+  "homeAddressCountry": "Philippines",
+  "homeAddressZip": "1600",
+  "homeAddressText": "Unit 2933 Joy Nostalg Centre, Pasig City, Metro Manila, Philippines, 1600",
+  "edit": {},
+  "skills": [],
+  "skillsText": "",
+  "clients": [
+    "Client 1"
+  ],
+  "clientsText": "Client 1",
+  "isReleased": true,
+  "isAvailable": false,
+  "canChangeReleaseState": true,
+  "canRingTest": true,
+  "releaseText": "Released",
+  "lastReleaseReasonLabel": "Default",
+  "releasedSinceStr": "16 Jan 2013, 12:39 PM",
+  "activeCalls": {},
+  "callTimes": {},
+  "myCptText": "--",
+  "profile": "Default",
+  "node": "oacddev.ezuce.com",
+  "selectedReleaseReason": null,
+  "sessionStateText": "released",
+  "sessionStateStyle": {
+    "released": true,
+    "idle": false,
+    "precall": false,
+    "incoming": false,
+    "outgoing": false,
+    "in_session": false,
+    "wrap_up": false
+  },
+  "namespace": "agent-state-gadget"
+}

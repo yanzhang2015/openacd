@@ -1,0 +1,47 @@
+{% extends "ouc_main.dtl" %}
+
+{% block title %}Log-in{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" media="screen" href="{{ static_root }}/styles/login.css">
+<!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+<script id="main-script" data-main="{{ static_root }}/scripts/login-page" src="{{ static_root }}/scripts/lib/require/require.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid" id="container-login">
+
+  <div class="alert alert-block alert-error fade in" div id="errorLogin" style="display: none;">
+  </div>
+
+  <h1>Login</h1>
+  <form id="login-form" action="login" method="POST" class="well form-horizontal login">
+    <fieldset id="login-fieldset">
+
+      <legend id="title">Username and Password</legend>
+
+      <div class="control-group" id="username-control-group">
+        <label class="control-label" for="username">Username:</label>
+        <div class="controls">
+          <input type="text" id="username" name="username">
+        </div>
+
+        <label class="control-label" for="username">Password:</label>
+        <div class="controls">
+          <input type="password" id="password" name="password">
+        </div>
+
+        <div class="controls">
+          <label class="checkbox" id="checkbox-label">
+            <input type="checkbox" name="remember" id="remember">
+            Remember me
+          </label>
+
+          <button type="submit" class="btn" id="login-button" value="Login">Login</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{application, reach,
+ [
+  {description, "A Contact Center Solution"},
+  {vsn, "@REL_VSN@"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+
+                  % Core
+                  reach_core,
+
+                  % Base plug-ins (Alphabetical)
+                  reach_dialplan,
+                  reach_freeswitch,
+                  reach_web,
+
+                  % Integrations (Alphabetical)
+                  reach_ouc,
+                  reach_spx
+                 ]},
+  {modules, [@ERLAPP_MODS_LIST@]},
+  {env, []}
+ ]}.

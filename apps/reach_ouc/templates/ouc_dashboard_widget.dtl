@@ -1,0 +1,18 @@
+<li class="gridster-widget"{% if dummy == 0 %} data-col="{{ conf.col }}" data-row="{{ conf.row }}" data-sizex="{{ conf.colspan }}" data-sizey="1"{% endif %}>
+  <div class="gadget{% if dummy == 0 %} {{ gadget|slugify }}-gadget" id="gadget-{{ forloop.counter0 }}" data-gadgetid="{{ gadget|slugify }}-gadget{% endif %}">
+    <div class="gadget-header" data-class="gadgetToggleArrow">
+      <div class="header-arrow down"></div>
+      <h3>{% if dummy == 0 %}{{ gadget|upper }}{% endif %}</h3>
+      <div class="gadget-icons">
+        <ul>
+          <li><a class="gadget-close not-yet-implemented" href="#"></a></li>
+          <li><a class="gadget-remove" data-class="" href="#"></a></li>
+          <li><a class="gadget-settings not-yet-implemented" href="#"></a></li>
+        </ul>
+      </div>
+    </div><!-- END gadget-header -->
+    <div class="gadget-content">
+      <!-- gadget template structure goes here -->
+    </div><!-- END gadget-content -->
+  </div><!-- END gadget -->
+</li><!-- END gridster-widget -->

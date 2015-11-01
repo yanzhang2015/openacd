@@ -1,0 +1,11 @@
+{
+  "id": "queue-manager-gadget",
+  "title": "Queue Manager",
+  "stylesheet": "gadgets/queue-manager/styles/queue-manager.css",
+  "raw_stylesheet": "gadgets/queue-manager/styles/queue-manager.less",
+  "container_class": "queue-manager-gadget",
+  "size_x": 3,
+  "width": 820,
+  "init_height": 755,
+  "supervisor": true
+}

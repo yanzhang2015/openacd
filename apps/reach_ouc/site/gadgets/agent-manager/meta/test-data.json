@@ -1,0 +1,386 @@
+{
+  "availableCoverage": [
+    {
+      "name": "Last 15 Minutes",
+      "apiText": "last_15m"
+    },
+    {
+      "name": "Last 30 Minutes",
+      "apiText": "last_30m"
+    },
+    {
+      "name": "Last Hour",
+      "apiText": "last_hr"
+    },
+    {
+      "name": "Today",
+      "apiText": "today"
+    },
+    {
+      "name": "This Week",
+      "apiText": "this_week"
+    },
+    {
+      "name": "This Month",
+      "apiText": "this_month"
+    }
+  ],
+  "states": [
+    {
+      "name": "Released",
+      "apiText": "released",
+      "sessionState": "released"
+    },
+    {
+      "name": "Idle",
+      "apiText": "idle",
+      "sessionState": "idle"
+    },
+    {
+      "name": "Pre-call",
+      "apiText": "prering",
+      "sessionState": "precall"
+    },
+    {
+      "name": "Ringing",
+      "apiText": "ringing",
+      "sessionState": "incoming"
+    },
+    {
+      "name": "In Session",
+      "apiText": "oncall",
+      "sessionState": "in_session"
+    },
+    {
+      "name": "Wrap-up",
+      "apiText": "wrapup",
+      "sessionState": "wrap_up"
+    }
+  ],
+  "customerList": [
+    "Farhampton Inn",
+    "GNB",
+    "Maclaren's Pub"
+  ],
+  "skillList": [
+    "english",
+    "german"
+  ],
+  "releaseReasons": [
+    {
+      "id": "default",
+      "name": "Default"
+    },
+    {
+      "id": "available",
+      "name": "Available"
+    }
+  ],
+  "profiles": [
+    {
+      "name": "Default",
+      "skills": [
+        "Maclaren's Pub",
+        "Farhampton Inn",
+        "GNB"
+      ],
+      "skillsText": "Maclaren's Pub, Farhampton Inn, GNB",
+      "rstats": [
+        {
+          "coverage": "last_15m",
+          "occup": 0,
+          "cpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "last_30m",
+          "occup": 0,
+          "cpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "last_hr",
+          "occup": 0,
+          "cpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "today",
+          "occup": 0,
+          "cpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "this_week",
+          "occup": 0,
+          "cpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "this_month",
+          "occup": 0,
+          "cpt": "infinity",
+          "calls": 0
+        }
+      ],
+      "rstatSelected": {
+        "coverage": "last_hr",
+        "occup": 0,
+        "cpt": "infinity",
+        "calls": 0
+      },
+      "occup": "0%",
+      "cpt": "--",
+      "calls": 0,
+      "total": 1,
+      "released": 1,
+      "idle": 0,
+      "ringing": 0,
+      "inSession": 0,
+      "wrapup": 0
+    }
+  ],
+  "profileList": [
+    "Default"
+  ],
+  "profileStatsCoverage": "last_hr",
+  "agents": [
+    {
+      "isExpanded": false,
+      "username": "1001",
+      "isSelf": true,
+      "timer": {
+        "isStarted": true,
+        "totalSeconds": 67,
+        "isCountdown": false,
+        "countdownSeconds": null,
+        "isCountdownOver": false,
+        "currentSeconds": 67,
+        "toMMSS": "01:07",
+        "toHHMMSS": "00:01:07",
+        "toHHMM": "00:01",
+        "intervalId": 109,
+        "utils": {}
+      },
+      "loginDuration": "00:01",
+      "first_name": "Marshall",
+      "last_name": "Eriksen",
+      "name": "Marshall Eriksen",
+      "jobTitle": "",
+      "avatar": "https://openucrpm.ezuce.ph/sipxconfig/rest/avatar/1001",
+      "location": "",
+      "localTime": "",
+      "profile": "Default",
+      "skills": [
+        "english"
+      ],
+      "csg": [
+        "Farhampton Inn",
+        "GNB",
+        "Maclaren's Pub"
+      ],
+      "agentState": "released",
+      "channelState": "",
+      "state": "released",
+      "releaseReason": "default",
+      "stateId": "default",
+      "stateIdInput": "default",
+      "timeInSession": "NaN:NaN",
+      "customer": {
+        "isAvatarDefault": true
+      },
+      "rstats": [
+        {
+          "coverage": "last_15m",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "last_30m",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "last_hr",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "today",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "this_week",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "this_month",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        }
+      ],
+      "rstatSelected": {
+        "coverage": "last_hr",
+        "occup": 0,
+        "myCpt": "infinity",
+        "calls": 0
+      },
+      "occup": "0%",
+      "myCpt": "--",
+      "calls": 0,
+      "jobTitleText": "",
+      "skillsText": "english",
+      "csgText": "Farhampton Inn, GNB, Maclaren's Pub",
+      "isStateReleased": true,
+      "isStateIdle": false,
+      "isStatePrecall": false,
+      "isStateIncoming": false,
+      "isStateInSession": false,
+      "isStateWrapUp": false,
+      "isMediaVoice": false,
+      "isMediaVoicemail": false,
+      "isMediaEmail": false,
+      "isProcessing": false,
+      "isMonitorOn": false,
+      "isBargeOn": false,
+      "hasMonitorPending": false,
+      "hasBargePending": false,
+      "canMonitor": true,
+      "canBarge": true
+    }
+  ],
+  "nameFilterBuffer": "",
+  "nameFilter": "",
+  "agentStatsCoverage": "last_hr",
+  "filteredAgents": [
+    {
+      "isExpanded": false,
+      "username": "1001",
+      "isSelf": true,
+      "timer": {
+        "isStarted": true,
+        "totalSeconds": 67,
+        "isCountdown": false,
+        "countdownSeconds": null,
+        "isCountdownOver": false,
+        "currentSeconds": 67,
+        "toMMSS": "01:07",
+        "toHHMMSS": "00:01:07",
+        "toHHMM": "00:01",
+        "intervalId": 109,
+        "utils": {}
+      },
+      "loginDuration": "00:01",
+      "first_name": "Marshall",
+      "last_name": "Eriksen",
+      "name": "Marshall Eriksen",
+      "jobTitle": "",
+      "avatar": "https://openucrpm.ezuce.ph/sipxconfig/rest/avatar/1001",
+      "location": "",
+      "localTime": "",
+      "profile": "Default",
+      "skills": [
+        "english"
+      ],
+      "csg": [
+        "Farhampton Inn",
+        "GNB",
+        "Maclaren's Pub"
+      ],
+      "agentState": "released",
+      "channelState": "",
+      "state": "released",
+      "releaseReason": "default",
+      "stateId": "default",
+      "stateIdInput": "default",
+      "timeInSession": "NaN:NaN",
+      "customer": {
+        "isAvatarDefault": true
+      },
+      "rstats": [
+        {
+          "coverage": "last_15m",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "last_30m",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "last_hr",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "today",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "this_week",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        },
+        {
+          "coverage": "this_month",
+          "occup": 0,
+          "myCpt": "infinity",
+          "calls": 0
+        }
+      ],
+      "rstatSelected": {
+        "coverage": "last_hr",
+        "occup": 0,
+        "myCpt": "infinity",
+        "calls": 0
+      },
+      "occup": "0%",
+      "myCpt": "--",
+      "calls": 0,
+      "jobTitleText": "",
+      "skillsText": "english",
+      "csgText": "Farhampton Inn, GNB, Maclaren's Pub",
+      "isStateReleased": true,
+      "isStateIdle": false,
+      "isStatePrecall": false,
+      "isStateIncoming": false,
+      "isStateInSession": false,
+      "isStateWrapUp": false,
+      "isMediaVoice": false,
+      "isMediaVoicemail": false,
+      "isMediaEmail": false,
+      "isProcessing": false,
+      "isMonitorOn": false,
+      "isBargeOn": false,
+      "hasMonitorPending": false,
+      "hasBargePending": false,
+      "canMonitor": true,
+      "canBarge": true
+    }
+  ],
+  "agentsSortIsAscendingMap": {
+    "name": false,
+    "occup": true,
+    "calls": true,
+    "myCpt": true,
+    "loginDuration": true,
+    "state": true
+  },
+  "agentsSortedBy": "name",
+  "intervalId": 110
+}

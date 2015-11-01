@@ -1,0 +1,110 @@
+{% extends "ouc_main.dtl" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" media="screen" href="{{ static_root }}/styles/jquery-ui-1.10.3.custom.css">
+<link rel="stylesheet" media="screen" href="{{ static_root }}/styles/dashboard.css">
+<link rel="stylesheet" media="screen" href="{{ static_root }}/styles/gadget.css">
+<!--This sets the baseUrl to the "scripts" directory,
+  and loads a script that will have a module ID of 'main'-->
+<script id="main-script" data-main="{{ static_root }}/scripts/dashboard-page" src="{{ static_root }}/scripts/lib/require/require.js"></script>
+{% endblock %}
+
+{% block nav %}
+<li class="active"><a href="#">HOME &nbsp; |</a></li>
+<!--li><a href="#">WIDGET STORE  &nbsp; |</a></li-->
+<li><a id="logout-link" data-class="logoutLink" href="logout?c={{ logout_code }}">LOGOUT</a></li>
+<li id="navbar-user-greeting" data-class="navbarGreeting" style="display: none;">Welcome <span data-class="navbarUsername"></span></li>
+{% endblock %}
+
+{% block content %}
+<div class="dashboard-loader">
+  <div id="fountainG"> <!-- loader -->
+  </div>
+</div>
+<div id="overlay" class="dashboard-loader"></div>
+
+<div id="dashboard-tabs" class="container-fluid">
+  <div id="dnav">
+
+    <div class="btn-toolbar nav-dashboard tab-group-container">
+      {% for tab, tabconf, gadgets in tabs %}
+      <div class="btn-group tab-group">
+        <div class="btn btn-mini" data-toggle="tabgrp">
+          <a data-target="#{{ tab|slugify }}-tab" href="#{{ tab|slugify }}">
+            {{ tab|upper }}
+          </a>
+        </div>
+        {% ifnotequal tabconf.layout "no-grid" %}
+        <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          {% ifequal tabconf.layout "wide" %}
+          <li><a href="#narrow" data-class="tabOptSwitch">Switch to Narrow Layout</a></li>
+          {% else %}
+          <li><a href="#wide" data-class="tabOptSwitch">Switch to Wide Layout</a></li>
+          {% endifequal %}
+          <li><a href="#" data-class="tabOptAdd">Add Widget</a></li>
+        </ul>
+        {% endifnotequal %}
+      </div><!--/btn-group-->
+      {% endfor %}
+      <button id="add-gadget" class="btn not-yet-implemented"><i class="icon-plus"></i></button>
+    </div><!--/btn-toolbar-->
+
+    <div class="pull-right">
+      <div class="nav-pushpin unpinned" data-class="tabPushpin">
+        <i class="icon-pushpin"></i>
+      </div>
+    </div>
+
+  </div>
+</div><!--end nav-bg-->
+
+<div class="dashboard-container">
+
+  <div id="dcontent" class="tab-content">
+    {% for tab, tabconf, gadgets in tabs %}
+    <div class="tab-pane" id="{{ tab|slugify }}-tab">
+      {% ifequal tabconf.layout "no-grid" %}
+      <div class="no-grid">
+        {% include "ouc_dashboard_reports.dtl" %}
+      </div>
+      {% else %}
+      <div class="gridster {{ tabconf.layout }}">
+        <ul class="gridster-wrapper">
+          {% for gadget, conf in gadgets %}
+          {% include "ouc_dashboard_widget.dtl" with dummy=0 %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% endifequal %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <ul id="container-gs_w-dummy">
+    {% include "ouc_dashboard_widget.dtl" with dummy=1 %}
+  </ul>
+
+</div>
+
+<div id="add-widget-modal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Select a Widget</h3>
+  </div>
+  <div class="modal-body">
+    <div class="styled">
+      <select data-class="widgetSelect">
+      </select>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-class="widgetCancelButton">Cancel</a>
+    <a href="#" class="btn btn-primary" data-class="widgetAddButton">Add Widget</a>
+  </div>
+</div>
+{% endblock %}

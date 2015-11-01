@@ -1,0 +1,47 @@
+{% extends "ouc_main.dtl" %}
+
+{% block title %}Log-in{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" media="screen" href="{{ static_root }}/styles/login.css">
+<!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+<script id="main-script" data-main="{{ static_root }}/scripts/login-page" src="{{ static_root }}/scripts/lib/require/require.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid" id="container-login">
+  <h1>Advanced Login</h1>
+  <div class="well form-horizontal">
+    <fieldset id="login-fieldset">
+
+      <div class="control-radio">
+        <form id="advanced-form" action="{{ form_action }}" method="POST">
+          <input type="hidden" id="force" name="force" value="1">
+          <button type="submit" class="btn">Use Advanced Login</button>
+        </form>
+      </div>
+
+      <div id=""class="control-radio">
+        <form id="login-form" action="{{ form_action }}" method="POST">
+          <input type="hidden" name="force" value="0">
+          <button type="submit" class="btn btn-primary">Continue</button>
+        </form>
+      </div>
+    </fieldset>
+    <div id="advanced-options-title">
+            <span>
+              <i class="icon-arrow-right"></i>
+              Advanced Options
+            </span>
+          </div>
+
+          <div class="control-group" id="advanced-options">
+            <label class="control-label" for="sip-uri">Endpoint:</label>
+            <div class="controls">
+              <input type="text" id="sip_uri" name="sip_uri" placeholder="sip:extension@hostname">
+            </div>
+          </div>
+  </div>
+</div>
+{% endblock %}

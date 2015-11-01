@@ -1,0 +1,107 @@
+html,body{
+  height: 100%
+}
+
+body {
+  padding-top: 45px !important;  /* 45px to make the container go all the way to the bottom of the topbar */
+}
+
+a:link, a:active, a:visited {
+  text-decoration: none;
+}
+
+.not-yet-implemented {
+  display: none !important;
+}
+
+ /* IMPORTANT */
+ /* set a max-width for horizontal fluid layout and make it centered */
+.container-fluid {
+  min-width: 820px;
+  /*max-width: 1660px;
+  margin-right: auto !important;
+  margin-left: auto !important;*/
+  padding-right: 80px !important;
+  padding-left: 80px !important;
+}
+
+.navbar-inner {
+  min-height: 44px;
+  background: rgb(46,143,177); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(46,143,177,1) 0%, rgba(33,134,169,1) 53%, rgba(13,119,153,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(46,143,177,1)), color-stop(53%,rgba(33,134,169,1)), color-stop(100%,rgba(13,119,153,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(46,143,177,1) 0%,rgba(33,134,169,1) 53%,rgba(13,119,153,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(46,143,177,1) 0%,rgba(33,134,169,1) 53%,rgba(13,119,153,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(46,143,177,1) 0%,rgba(33,134,169,1) 53%,rgba(13,119,153,1) 100%); /* IE10+ */
+  background: linear-gradient(top,  rgba(46,143,177,1) 0%,rgba(33,134,169,1) 53%,rgba(13,119,153,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e8fb1', endColorstr='#0d7799',GradientType=0 ); /* IE6-9 */
+}
+
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.navbar .nav.pull-right {
+  float: right;
+}
+
+.navbar .nav > li {
+  display: block;
+  float: left;
+}
+
+.navbar .nav > li > a {
+  float: none;
+  padding: 9px 10px 0px;
+  /*line-height: 19px;*/
+  margin-top:15px;
+  color: #f5f5f5;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  top:-5px;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #92CEDE;
+  text-decoration: none;
+  background: none !important;
+  box-shadow:none;
+}
+
+.navbar .nav > li >  a:hover
+{
+  color:#E1F2FA;
+}
+
+#navbar-user-greeting
+{
+  margin-left:70px;
+  font-size:14px;
+  margin-top:15px;
+  color: whiteSmoke;
+}
+
+#navbar-datetime
+{
+  font-size:14px;
+  margin-top:15px;
+  color: whiteSmoke;
+}
+
+/* dashboard banner */
+#banner {
+  display: none;
+}
+#banner .alert {
+  border-top: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+/* END dashboard banner */

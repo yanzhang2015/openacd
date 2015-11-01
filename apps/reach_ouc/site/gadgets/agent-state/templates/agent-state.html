@@ -1,0 +1,694 @@
+
+<div class="gadget-row">
+  <div class="header-h4 row-fluid" data-class="gadgetSectionHeader">
+    <span class="header-arrow arrow-icon arrow-down align-left"></span>
+
+    <h4 class="gadget-row-title span4 tight">My Profile</h4>
+
+    <div class="gdgsec-headnote span7 tight profile-state pull-right">
+      <ul id="profile-state-icons">
+        <li id="profile-stat1" class="align-left" data-class="asSessionState">wrap up</li>
+
+        <li id="profile-stat2" class="busy align-left not-yet-implemented">busy</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-content" data-class="asProfileDiv">
+    <div class="row-fluid profile-info">
+      <div class="span2 tight">
+        <div class="profile-pic-frame" data-class="asProfilePicFrame">
+          <div class="profile-pic">
+            <img data-class="asProfilePic" src="">
+          </div>
+          <div class="profile-pic-status offline" data-class="asProfilePicStatus"></div>
+        </div>
+      </div>
+
+      <div id="profile-view" class="span7 tight" data-class="asViewProfileEl">
+        <ul>
+          <li data-class="asNameText" class="profile-name">Name</li>
+
+          <li data-class="asPositionText">Position</li>
+
+          <li data-class="asAreaText">Area</li>
+        </ul>
+      </div>
+
+      <div class="span3 tight">
+        <button class="profile-icon off" data-class="asViewProfileEl asProfileIcon">
+          <i class="icon-view_profile"></i>
+        </button>
+
+        <!--<div class="profile-icon off" data-class ="asViewProfileEl asProfileIcon">
+      </div>-->
+    </div>
+  </div>
+
+  <div class="my-profile profile-more-info" data-class="asProfileMoreInfoDiv" style="display:none;">
+    <div class="gadget-edit-icons row-fluid">
+      <a href="#" data-class="asEditProfileButton asViewProfileEl">
+        <div id="edit-gadget-pencil" class="span6">
+          <i class="icon-state_write"></i>
+        </div>
+      </a>
+      <a href="#" data-class="asViewProfileEl asProfileIcon">
+        <div id="close-gadget-pencil" class="span6">
+         <i class="icon-close"></i>
+       </div>
+     </a>
+
+   </div>
+   <div id="profile-more-info-content">
+     <div class="row-fluid not-yet-implemented">
+      <div class="span4 info-label-text">
+        Local Time:
+      </div>
+
+      <div class="span8 editing-row">
+        <span>Time</span>
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span4 info-label-text">
+        Manager:
+      </div>
+
+      <div class="span8 editing-row">
+        <span data-class="asManagerText">Manager Name</span>
+      </div>
+    </div>
+
+    <div class="padded-top row-fluid">
+      <div class="span4 info-label-text">
+        Skills:
+      </div>
+
+      <div class="span8">
+        <span data-class="asSkillsText"></span>
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span4 info-label-text">
+        CSG:
+      </div>
+
+      <div class="span8">
+
+        <span data-class="asClientsText"></span>
+      </div>
+    </div>
+
+    <div class="padded-top row-fluid">
+      <div class="span4 info-label">
+        <button class="phone-button">
+          <i class="icon-phone_mobile"></i>
+        </button>
+      </div>
+      <div class="span8">
+        <div>
+          <span class="profile-label">Internal</span>
+          <span class="profile-value" data-class="asPhoneInternalText"></span>
+        </div>
+
+        <div>
+          <span class="profile-label">Direct</span>
+          <span class="profile-value" data-class="asPhoneDirectText asViewProfileEl"></span>
+          <input type="text" data-class="asPhoneDirectInput asEditProfileEl" class="direct">
+        </div>
+
+        <div>
+          <span class="profile-label">Cell</span>
+          <span class="profile-value" data-class="asPhoneCellText asViewProfileEl"></span>
+          <input type="text" data-class="asPhoneCellInput asEditProfileEl" class="cell">
+        </div>
+      </div>
+    </div>
+
+    <div class="padded-top row-fluid">
+      <div class="span4 info-label">
+       <button class="email-button">
+        <i class="icon-mail"></i>
+      </button>
+
+    </div>
+
+    <div class="span8">
+      <div class="row-fluid">
+        <span class="profile-label">Email</span>
+        <span class="profile-value" data-class="asEmailText asViewProfileEl"></span>
+        <input type="text" data-class="asEmailInput asEditProfileEl" class="email">
+      </div>
+    </div>
+  </div>
+
+  <div class="padded-top row-fluid">
+    <div class="span4 info-label">
+     <button class="address-button">
+      <i class="icon-address"></i>
+    </button>
+  </div>
+
+  <div class="span8">
+    <div class="row-fluid gadget-row-padded">
+      <span class="info-label">Address</span>
+
+      <p class="profile-value" data-class="asHomeAddressText asViewProfileEl"></p>
+
+      <div data-class="asEditProfileEl" id="profile-edit-address">
+        <input type="text" placeholder="Street" data-class="asHomeAddressStreetInput" class="address"> <input type="text" placeholder="City" data-class="asHomeAddressCityInput" class="address"> <input type="text" placeholder="State" data-class="asHomeAddressStateInput" class="address"> <input type="text" placeholder="Country" data-class="asHomeAddressCountryInput" class="address"> <input type="text" placeholder="Zip" data-class="asHomeAddressZipInput" class="address">
+      </div>
+    </div>
+  </div>
+  </div>
+     <div class="padded-top row-fluid">
+       <div class="span4 info-label">
+         <button class="sound_notification-button">
+           <i class="icon-alarm"></i>
+         </button>
+       </div>
+
+       <div class="span8">
+         <div class="row-fluid gadget-row-padded">
+           <span class="info-label">Sound Notification</span>
+
+           <p class="profile-value" data-class="asSoundNotificationCheckbox asViewProfileEl"></p>
+
+           <div data-class="asEditProfileEl" id="profile-edit-notification">
+             <input type="checkbox" data-class="asSoundNotificationCheckboxInput" style="width:20px; height:20px">
+
+             <input id="soundNotificationInterval" type="text"
+                    placeholder="enter duration"
+                    title="The number of seconds"
+                    style="font-size: 12px; line-height: 20px; width:130px; height: 20px; margin-bottom: 0px"
+                    data-class="amSoundNotificationInterval">
+           </div>
+         </div>
+       </div>
+     </div>
+<div class="row-fluid padded-bottom">
+  <div class="gadget-editing-buttons pull-right" data-class="asEditProfileEl">
+    <button data-class="asCancelEditButton">cancel</button> <button id="save-profile-button" class="editbox-selected" data-class="asSaveProfileButton">save</button>
+  </div>
+</div>
+</div>
+
+
+</div><!-- end profile-more-info -->
+</div>
+</div><!--END 'my profile' gadget-row -->
+
+<div id="ags-cursession" class="gadget-row">
+  <div class="header-h4 row-fluid" data-class="gadgetSectionHeader">
+    <span class="header-arrow arrow-icon arrow-down align-left"></span>
+
+    <h4 class="gadget-row-title span9 tight">Current Session</h4>
+  </div>
+
+  <div class="section-content">
+    <div id="agent-session-counters" class="row-fluid">
+      <div class="span3 session-button-outer">
+        <button class="session-button" id="agent-state-session-button" data-class="asReleaseButton">
+          <div class="session-button-inner">
+            <i class="icon-play" data-class="asReleaseButtonIcon"></i>
+          </div>
+        </button>
+      </div>
+      <button id="ags-ring" class="span9 tight not-yet-implemented" data-class="asRingTestButton asVisibleIfReleased">Ring Test</button>
+
+      <div class="span9" data-class="asVisibleIfAvailable" style="display:none;">
+        <div class="row-fluid tight">
+          <div class="span3 tight-counter not-yet-implemented">
+            CALLS<br>
+
+            <p data-class="asCallsText">--</p>
+          </div>
+
+          <div class="span3 tight-counter not-yet-implemented">
+            AGENTS<br>
+
+            <p data-class="asAgentsText">--</p>
+          </div>
+
+          <div class="span3 tight-counter not-yet-implemented">
+            CPT<br>
+
+            <p data-class="asCptText">--</p>
+          </div>
+
+          <div class="span3 tight-counter">
+            MY CPT<br>
+
+            <p data-class="asMyCptText">--</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-fluid" data-class="asVisibleIfAvailable" style="display:none;">
+      <div class="span3 tight">
+        <div class="styled reason">
+          <select data-class="asReleaseReasonDropdown">
+            <option>Reason</option>
+          </select>
+        </div>
+
+        <div class="row-fluid">
+          <div id="agent-timer-text">
+            <span data-class="asAgentTimerText">00:00:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="session-profile" class="span9" data-class="asVisibleIfAvailable">
+        <div class="row-fluid">
+          <div class="span3 info-label-text tight">
+            Profile
+          </div>
+          <div class="span8" data-class="asProfileText"></div>
+        </div>
+
+        <div class="row-fluid">
+          <div class="span3 info-label-text tight">
+            Skills
+          </div>
+          <div class="span8" data-class="asSkillsText"></div>
+        </div>
+
+        <div class="row-fluid">
+          <div class="span3 info-label-text tight">
+            Node
+          </div>
+
+          <div class="span8" data-class="asNodeText"></div>
+        </div>
+      </div>
+    </div>
+
+    <div data-class="asVisibleIfReleased">
+      <span data-class="asReleaseStateLabel">Released</span>
+
+      <div class="row-fluid">
+        <div class="span5 profile-label">
+          Release reason:
+        </div>
+
+        <div id="ags-release-reason" class="span7 profile-text" data-class="asReleaseReasonLabel">
+          Default
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span5 profile-label">
+          Since:
+        </div>
+
+        <div id="ags-release-since" class="span7 profile-text" data-class="asReleasedSinceLabel"></div>
+      </div>
+    </div>
+  </div>
+</div><!-- END ags-cursession -->
+
+<div class="gadget-row not-yet-implemented">
+  <div class="header-h4 row-fluid" data-class="gadgetSectionHeader">
+    <span class="header-arrow arrow-icon arrow-down align-left"></span>
+
+    <h4 class="gadget-row-title span4 tight">Manager</h4>
+
+    <div class="gdgsec-headnote profile-state align-right">
+      <ul id="profile-state-icons">
+        <li id="profile-stat1" class="session align-left">in session</li>
+
+        <li id="profile-stat2" class="online align-left">online</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-content">
+    <div class="row-fluid profile-info" style="clear:both">
+      <div class="span2 tight">
+        <div class="profile-pic-frame">
+          <div class="profile-pic">
+            <img data-class="asProfilePic" src="">
+          </div>
+          <div class="profile-pic-status available"></div>
+        </div>
+      </div>
+
+      <div id="manager-profile-view" class="span6 tight">
+        <ul>
+          <li class="profile-name">Name</li>
+
+          <li>Position</li>
+
+          <li>Area</li>
+        </ul>
+      </div>
+
+      <div class="span4 tight">
+
+       <button class="profile-chat"><i class="icon-chat"></i></button>
+       <button class="profile-icon off" data-class="asViewProfileEl">
+        <i class="icon-view_profile"></i>
+      </button>
+
+    </div>
+  </div>
+
+  <div class="profile-more-info">
+    <div class="row-fluid">
+      <div class="span4 info-label-text">
+        Local Time:
+      </div>
+
+      <div class="span7">
+        <span>Time</span>
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span4 info-label-text">
+        Manager:
+      </div>
+
+      <div class="span7">
+        <span>Manager Name</span>
+      </div>
+    </div>
+
+    <div class="padded-top row-fluid">
+      <div class="span4 info-label-text">
+        Skills:
+      </div>
+
+      <div class="span7">
+        <span>Blah Blah Blah</span>
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span4 info-label-text">
+        CSG:
+      </div>
+
+      <div class="span7">
+        <span>Blah Blah Blah</span>
+      </div>
+    </div>
+
+
+    <div class="padded-top row-fluid">
+      <div class="span4 info-label">
+       <button class="phone-button">
+        <i class="icon-phone_mobile"></i>
+      </button>
+    </div>
+
+    <div class="numbers span7">
+      <div class="row-fluid">
+        <span class="info-label">Internal</span> <input id="internal" type="text" placeholder="None">
+      </div>
+
+      <div class="row-fluid">
+        <span class="info-label">Direct</span> <input id="direct" type="text" placeholder="None">
+      </div>
+
+      <div class="row-fluid">
+        <span class="info-label">Cell</span> <input id="cell" type="text" placeholder="None">
+      </div>
+    </div>
+  </div>
+
+<div class="padded-top row-fluid">
+      <div class="span4 info-label">
+       <button class="email-button">
+        <i class="icon-mail"></i>
+      </button>
+
+    </div>
+
+    <div class="span8">
+      <div class="row-fluid">
+        <span class="profile-label">Email</span>
+        <input type="text" class="manager-email">
+      </div>
+    </div>
+  </div>
+
+  <div class="padded-top row-fluid">
+    <div class="span4 info-label">
+     <button class="address-button">
+      <i class="icon-address"></i>
+    </button>
+  </div>
+
+  <div class="span8">
+    <div class="row-fluid gadget-row-padded">
+      <span class="info-label">Address</span>
+
+      <p class="profile-value"></p>
+
+      <div id="manager-profile-edit-address">
+        <input type="text" placeholder="Street" class="address"> <input type="text" placeholder="City" class="address"> <input type="text" placeholder="State" class="address"> <input type="text" placeholder="Country" class="address"> <input type="text" placeholder="Zip" class="address">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div><!-- END 'manager' -->
+
+<div class="gadget-row not-yet-implemented">
+  <div class="header-h4 row-fluid" data-class="gadgetSectionHeader">
+    <span class="header-arrow arrow-icon arrow-down align-left"></span>
+
+    <h4 class="gadget-row-title span6 tight">Chat</h4>
+
+    <div class="gdgsec-headnote span4 tight profile-state pull-right">
+      <!--<ul id="chat-state-icons">
+        <li id="chat-stat" class="online align-left">Team</li>
+      </ul>-->
+    </div>
+  </div>
+
+  <div class="section-content">
+    <div id="chat" class="tabbable">
+      <!-- Only required for left/right tabs -->
+
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#tab1" class="nav-tab-regular" data-toggle="tab"><i class="icon-user"></i> Contacts</a>
+        </li>
+
+        <li>
+          <a href="#tab2" class="nav-tab-regular unread" data-toggle="tab"><i class="icon-group-chat"></i> Team</a>
+        </li>
+
+        <li>
+          <a href="#tab3" class="nav-tab-regular" data-toggle="tab"><i class="icon-chat"></i> Manager</a>
+        </li>
+
+        <li>
+          <a href="#tab4" data-toggle="tab"><i class="icon-plus"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="chat tab-content">
+      <div class="tab-pane active" id="tab1">
+        <div class="chat-section-title">
+          <i class="icon-arrow-right"></i> Client Support Teams
+        </div>
+
+        <div class="chat-section-title">
+          <i class="icon-arrow-down"></i> Team
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-list">
+      <div class="chat-contact row-fluid">
+        <span class="span2 tight">
+         <div class="profile-pic-frame">
+          <div class="profile-pic">
+            <img data-class="asProfilePic" src="">
+          </div>
+          <div class="profile-pic-status available"></div>
+        </div>
+      </span> <span class="span6 tight"><strong>Paul Alison</strong><br>
+      Sales Agent<br>
+      Denver, Colorado</span>
+
+      <div class="span4 tight">
+        <div class="row-fluid">
+          <button class="profile-chat"><i class="icon-chat"></i></button>
+          <button class="profile-icon off" data-class="asViewProfileEl">
+            <i class="icon-view_profile"></i>
+          </button>
+
+        </div>
+
+        <div class="row-fluid">
+          <div class="chat-status">
+            idle
+          </div>
+        </div>
+      </div>
+    </div><!-- /chat contact -->
+
+    <div class="chat-contact row-fluid">
+      <span class="span2 tight">
+       <div class="profile-pic-frame">
+        <div class="profile-pic">
+          <img data-class="asProfilePic" src="">
+        </div>
+        <div class="profile-pic-status available"></div>
+      </div>
+    </span> <span class="span6 tight"><strong>Paul Alison</strong><br>
+    Sales Agent<br>
+    Denver, Colorado</span>
+
+    <div class="span4 tight">
+      <div class="row-fluid">
+        <button class="profile-chat"><i class="icon-chat"></i></button>
+        <button class="profile-icon active" data-class="asViewProfileEl">
+          <i class="icon-view_profile"></i>
+        </button>
+
+      </div>
+
+      <div class="row-fluid">
+        <div class="chat-status">
+          idle
+        </div>
+      </div>
+    </div>
+  </div><!-- /chat contact -->
+
+  <div class="chat-contact row-fluid">
+    <span class="span2 tight">
+     <div class="profile-pic-frame">
+      <div class="profile-pic">
+        <img data-class="asProfilePic" src="">
+      </div>
+      <div class="profile-pic-status available"></div>
+    </div>
+  </span> <span class="span6 tight"><strong>Paul Alison</strong><br>
+  Sales Agent<br>
+  Denver, Colorado</span>
+
+  <div class="span4 tight">
+    <div class="row-fluid">
+      <button class="profile-chat"><i class="icon-chat"></i></button>
+      <button class="profile-icon off" data-class="asViewProfileEl">
+        <i class="icon-view_profile"></i>
+      </button>
+
+    </div>
+
+    <div class="row-fluid">
+      <div class="chat-status">
+        idle
+      </div>
+    </div>
+  </div>
+</div><!-- /chat contact -->
+
+<div class="chat-contact row-fluid">
+  <span class="span2 tight">
+   <div class="profile-pic-frame">
+    <div class="profile-pic">
+      <img data-class="asProfilePic" src="">
+    </div>
+    <div class="profile-pic-status available"></div>
+  </div>
+</span> <span class="span6 tight"><strong>Paul Alison</strong><br>
+Sales Agent<br>
+Denver, Colorado</span>
+
+<div class="span4 tight">
+  <div class="row-fluid">
+    <button class="profile-chat"><i class="icon-chat"></i></button>
+    <button class="profile-icon off" data-class="asViewProfileEl">
+      <i class="icon-view_profile"></i>
+    </button>
+
+  </div>
+
+  <div class="row-fluid">
+    <div class="chat-status">
+      idle
+    </div>
+  </div>
+</div>
+</div><!-- /chat contact -->
+
+<div class="chat-contact row-fluid">
+  <span class="span2 tight">
+   <div class="profile-pic-frame">
+    <div class="profile-pic">
+      <img data-class="asProfilePic" src="">
+    </div>
+    <div class="profile-pic-status available"></div>
+  </div>
+</span> <span class="span6 tight"><strong>Paul Alison</strong><br>
+Sales Agent<br>
+Denver, Colorado</span>
+
+<div class="span4 tight">
+  <div class="row-fluid">
+    <button class="profile-chat"><i class="icon-chat"></i></button>
+    <button class="profile-icon off" data-class="asViewProfileEl">
+      <i class="icon-view_profile"></i>
+    </button>
+
+  </div>
+
+  <div class="row-fluid">
+    <div class="chat-status">
+      idle
+    </div>
+  </div>
+</div>
+</div><!-- /chat contact -->
+</div><!--/chat list-->
+
+<div class="tab-pane" id="tab2"></div>
+
+<div class="tab-pane" id="tab3"></div>
+</div>
+
+<div id="chat-search" class="row-fluid">
+  <span class="span2">
+    <div class="icon-square">
+      <i class="icon-search"></i>
+    </div>
+  </span>
+  <span class="span10">
+    <input type="text" />
+  </span>
+</div>
+</div><!-- END 'chat' -->
+
+<div class="gadget-row not-yet-implemented">
+  <div class="header-h4 row-fluid" data-class="gadgetSectionHeader">
+    <span class="header-arrow arrow-icon arrow-down align-left"></span>
+
+    <h4 class="gadget-row-title span9 tight">Message of the Day</h4>
+  </div>
+
+  <div class="section-content"></div>
+</div><!-- END 'motd' -->
+<!-- CHAT WIDGET COMMENTED OUT -->
+<!--<div id="ags-chatsession" class="gadget-row"> <h4 class="gadget-row-title">Chat</h4>
+<div id="chat-container"> <ul id="chat-list">
+<li><a href="#"></a></li> </ul>
+<form> <fieldset> <label for="to">To</label><br/> <input type="text" name="to"
+></label><textarea
+disabled="disabled"></textarea>
+<input type="text" name="msg"/>
+<input type="submit" value="Send"/>
+</fieldset> </form> </div> </div> -->
+<!--END agent-state-gadget -->

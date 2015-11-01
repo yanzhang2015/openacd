@@ -1,0 +1,60 @@
+<div id="reports-ui">
+  <div class="row-fluid">
+    <div class="span2">
+      <div class="config">
+        <div>
+          <span>Report Type</span>
+          <label class="styled">
+            <select data-class="reportsSelect"></select>
+          </label>
+        </div>
+        <div class="filters">
+          <span class="title">Filters</span>
+
+          {# <div>
+            <span>Sample Select</span>
+            <label class="styled">
+              <select>
+                <option>Option 1</option>
+              </select>
+            </label>
+          </div> #}
+
+          <div>
+            <span>Start Date</span>
+            <input class="datepicker" type="text" readonly="readonly" data-class="reportsQueryStartDate" />
+          </div>
+          <div>
+            <span>End Date</span>
+            <input class="datepicker" type="text" readonly="readonly" data-class="reportsQueryEndDate" />
+          </div>
+
+          <div data-class="reportsVisibleIfCdr">
+            <span>Direction</span>
+            <label class="styled">
+              <select data-class="reportsDirectionSelect">
+              </select>
+            </label>
+          </div>
+
+        </div><!-- END .filters -->
+        <div class="submit">
+          <button class="pull-right" data-class="reportsGenerate">Generate</button>
+        </div>
+      </div>
+    </div>
+    <div class="span10">
+      <div class="preview">
+        <div class="content">
+          <iframe data-class="reportsPreview"></iframe>
+        </div>
+        <div class="controls pull-right">
+          <span>Download as</span>
+          <a href="#" target="_blank" data-class="reportsXls">Excel</a>
+          <a href="#" target="_blank" data-class="reportsCsv">CSV</a>
+          <a href="#" target="_blank" data-class="reportsPdf">PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

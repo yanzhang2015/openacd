@@ -1,0 +1,74 @@
+[{reach_core, [
+  {rsakey, "@reachkey@"}
+    %% Add plugins here
+    , {plugins, [reach_freeswitch, reach_dialplan, reach_spx, reach_ouc]}
+    , {agent_auth_storage, spx_agent_auth}
+    , {call_queue_config_storage, spx_call_queue_config}
+    %% Add reach nodes here
+    , {nodes, []}
+    , {recording_format, mp3}
+]},
+%% Application-specific configuration here
+{reach_freeswitch, [
+    {freeswitch_node, 'freeswitch@127.0.0.1'},
+    {cpx_managed, true}
+]},
+
+{reach_dialplan, [
+    {agent_login_announcement, "/usr/local/sipx/etc/sipxpbx/reach/prompts/CannotLogin.wav"}
+]},
+
+{reach_ouc, [
+
+    {rstat, [
+        {backend, mongo}
+    ]},
+
+    % Redis
+    %{redis, [
+    %    {host, "127.0.0.1"},
+    %    {port, 12121}
+    %]},
+
+    %{reports, [
+    %    {agent, [
+    %        {coverage, 300} % should be rounded to a value from ouc_rstat:DEFAULT_CONF
+    %    ]}
+    %]},
+
+    {ouc_web, [
+        % WebSocket start bind port;
+        % wss_port = ws_port + 1;
+        {ws_port, 8936},
+
+        % Number of websocket workers (half for ws and half for wss)
+        % If cowboy_workers = 100,
+        %   wss will get 50 workers
+        %   ws  will get 50 workers
+        {cowboy_workers, 100},
+        {cowboy_ssl_versions, ['tlsv1.2','tlsv1.1',tlsv1]},
+
+        % TLS/SSL certificates to use
+        {ssl_certfile, "@reachkeydir@/ssl-web.crt"},
+        {ssl_keyfile,  "@reachkeydir@/ssl-web.key"}
+
+    ]},
+
+    {ouc_call_segment_report_job, [
+        %% Seconds interval between script run
+        {interval, 300}
+    ]},
+
+    {sipxconfig_rest_api, "https://127.0.0.1/sipxconfig/rest"},
+    {contact_info_resource, "/my/contact-information"},
+    {root_uri, "/reach/portal"},
+
+    % enable js debug tools/logs
+    {frontend_debug, true},
+
+    % static file server (no trailing slash)
+    {frontend_static_root_uri, "/reach/static"}
+]},
+{lager, []},
+  "@reachetcdir@/lager.config"
+].

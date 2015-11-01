@@ -1,0 +1,36 @@
+{% extends "ouc_main.dtl" %}
+
+{% block title %}Log-in{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" media="screen" href="{{ static_root }}/styles/login.css">
+<!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+<script id="main-script" data-main="{{ static_root }}/scripts/login-page" src="{{ static_root }}/scripts/lib/require/require.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid" id="container-login">
+  <h1>Duplicate Session</h1>
+  <div class="well form-horizontal">
+    <fieldset id="login-fieldset">
+
+      <legend id="title">Do you want to terminate your previous session?</legend>
+
+      <div class="control-radio">
+        <form action="{{ form_action }}" method="POST">
+          <input type="hidden" name="force" value="0">
+          <button type="submit" class="btn">No</button>
+        </form>
+      </div>
+
+      <div class="control-radio">
+        <form action="{{ form_action }}" method="POST">
+          <input type="hidden" name="force" value="1">
+          <button type="submit" class="btn btn-primary">Yes</button>
+        </form>
+      </div>
+    </fieldset>
+  </div>
+</div>
+{% endblock %}

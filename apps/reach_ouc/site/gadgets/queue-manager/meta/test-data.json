@@ -1,0 +1,935 @@
+{
+  "coverageList": [
+    {
+      "name": "Last 15 Minutes",
+      "apiText": "last_15m"
+    },
+    {
+      "name": "Last 30 Minutes",
+      "apiText": "last_30m"
+    },
+    {
+      "name": "Last Hour",
+      "apiText": "last_hr"
+    },
+    {
+      "name": "Today",
+      "apiText": "today"
+    },
+    {
+      "name": "This Week",
+      "apiText": "this_week"
+    },
+    {
+      "name": "This Month",
+      "apiText": "this_month"
+    }
+  ],
+  "queues": [
+    {
+      "name": "EnglishQueue",
+      "media": "voice",
+      "isExpanded": false,
+      "lines": [
+        {
+          "ext": "80",
+          "didN": null,
+          "customerName": "GNB"
+        },
+        {
+          "ext": "90",
+          "didN": null,
+          "customerName": "Maclaren's Pub"
+        }
+      ],
+      "ciq": 0,
+      "expectedWait": "--",
+      "connected": 0,
+      "rstats": [
+        {
+          "coverage": "last_15m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_30m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_hr",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "today",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_week",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_month",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        }
+      ],
+      "rstatSelected": {
+        "coverage": "last_hr",
+        "aAnswerSeconds": "infinity",
+        "aSpeedAnswer": "--",
+        "maxWaitSeconds": 0,
+        "longestWait": "00:00",
+        "completed": 0,
+        "aAbandonSeconds": "infinity",
+        "aAbandonTime": "--",
+        "abandoned": 0
+      }
+    },
+    {
+      "name": "GermanQueue",
+      "media": "voice",
+      "isExpanded": false,
+      "lines": [
+        {
+          "ext": "81",
+          "didN": null,
+          "customerName": "Farhampton Inn"
+        },
+        {
+          "ext": "91",
+          "didN": null,
+          "customerName": "Maclaren's Pub"
+        }
+      ],
+      "ciq": 0,
+      "expectedWait": "--",
+      "connected": 0,
+      "rstats": [
+        {
+          "coverage": "last_15m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_30m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_hr",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "today",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_week",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_month",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        }
+      ],
+      "rstatSelected": {
+        "coverage": "last_hr",
+        "aAnswerSeconds": "infinity",
+        "aSpeedAnswer": "--",
+        "maxWaitSeconds": 0,
+        "longestWait": "00:00",
+        "completed": 0,
+        "aAbandonSeconds": "infinity",
+        "aAbandonTime": "--",
+        "abandoned": 0
+      }
+    },
+    {
+      "name": "default_queue",
+      "media": "voice",
+      "isExpanded": false,
+      "lines": [],
+      "ciq": 0,
+      "expectedWait": "--",
+      "connected": 0,
+      "rstats": [
+        {
+          "coverage": "last_15m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_30m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_hr",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "today",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_week",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_month",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        }
+      ],
+      "rstatSelected": {
+        "coverage": "last_hr",
+        "aAnswerSeconds": "infinity",
+        "aSpeedAnswer": "--",
+        "maxWaitSeconds": 0,
+        "longestWait": "00:00",
+        "completed": 0,
+        "aAbandonSeconds": "infinity",
+        "aAbandonTime": "--",
+        "abandoned": 0
+      }
+    },
+    {
+      "name": "transfer_queue",
+      "media": "voice",
+      "isExpanded": false,
+      "lines": [],
+      "ciq": 0,
+      "expectedWait": "--",
+      "connected": 0,
+      "rstats": [
+        {
+          "coverage": "last_15m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_30m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_hr",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "today",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_week",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_month",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        }
+      ],
+      "rstatSelected": {
+        "coverage": "last_hr",
+        "aAnswerSeconds": "infinity",
+        "aSpeedAnswer": "--",
+        "maxWaitSeconds": 0,
+        "longestWait": "00:00",
+        "completed": 0,
+        "aAbandonSeconds": "infinity",
+        "aAbandonTime": "--",
+        "abandoned": 0
+      }
+    }
+  ],
+  "qRollingStatsCoverage": "last_hr",
+  "queueMediaFilter": "voice",
+  "filteredQueues": [
+    {
+      "name": "EnglishQueue",
+      "media": "voice",
+      "isExpanded": false,
+      "lines": [
+        {
+          "ext": "80",
+          "didN": null,
+          "customerName": "GNB"
+        },
+        {
+          "ext": "90",
+          "didN": null,
+          "customerName": "Maclaren's Pub"
+        }
+      ],
+      "ciq": 0,
+      "expectedWait": "--",
+      "connected": 0,
+      "rstats": [
+        {
+          "coverage": "last_15m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_30m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_hr",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "today",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_week",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_month",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        }
+      ],
+      "rstatSelected": {
+        "coverage": "last_hr",
+        "aAnswerSeconds": "infinity",
+        "aSpeedAnswer": "--",
+        "maxWaitSeconds": 0,
+        "longestWait": "00:00",
+        "completed": 0,
+        "aAbandonSeconds": "infinity",
+        "aAbandonTime": "--",
+        "abandoned": 0
+      }
+    },
+    {
+      "name": "GermanQueue",
+      "media": "voice",
+      "isExpanded": false,
+      "lines": [
+        {
+          "ext": "81",
+          "didN": null,
+          "customerName": "Farhampton Inn"
+        },
+        {
+          "ext": "91",
+          "didN": null,
+          "customerName": "Maclaren's Pub"
+        }
+      ],
+      "ciq": 0,
+      "expectedWait": "--",
+      "connected": 0,
+      "rstats": [
+        {
+          "coverage": "last_15m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_30m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_hr",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "today",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_week",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_month",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        }
+      ],
+      "rstatSelected": {
+        "coverage": "last_hr",
+        "aAnswerSeconds": "infinity",
+        "aSpeedAnswer": "--",
+        "maxWaitSeconds": 0,
+        "longestWait": "00:00",
+        "completed": 0,
+        "aAbandonSeconds": "infinity",
+        "aAbandonTime": "--",
+        "abandoned": 0
+      }
+    },
+    {
+      "name": "default_queue",
+      "media": "voice",
+      "isExpanded": false,
+      "lines": [],
+      "ciq": 0,
+      "expectedWait": "--",
+      "connected": 0,
+      "rstats": [
+        {
+          "coverage": "last_15m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_30m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_hr",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "today",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_week",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_month",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        }
+      ],
+      "rstatSelected": {
+        "coverage": "last_hr",
+        "aAnswerSeconds": "infinity",
+        "aSpeedAnswer": "--",
+        "maxWaitSeconds": 0,
+        "longestWait": "00:00",
+        "completed": 0,
+        "aAbandonSeconds": "infinity",
+        "aAbandonTime": "--",
+        "abandoned": 0
+      }
+    },
+    {
+      "name": "transfer_queue",
+      "media": "voice",
+      "isExpanded": false,
+      "lines": [],
+      "ciq": 0,
+      "expectedWait": "--",
+      "connected": 0,
+      "rstats": [
+        {
+          "coverage": "last_15m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_30m",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "last_hr",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "today",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_week",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        },
+        {
+          "coverage": "this_month",
+          "aAnswerSeconds": "infinity",
+          "aSpeedAnswer": "--",
+          "maxWaitSeconds": 0,
+          "longestWait": "00:00",
+          "completed": 0,
+          "aAbandonSeconds": "infinity",
+          "aAbandonTime": "--",
+          "abandoned": 0
+        }
+      ],
+      "rstatSelected": {
+        "coverage": "last_hr",
+        "aAnswerSeconds": "infinity",
+        "aSpeedAnswer": "--",
+        "maxWaitSeconds": 0,
+        "longestWait": "00:00",
+        "completed": 0,
+        "aAbandonSeconds": "infinity",
+        "aAbandonTime": "--",
+        "abandoned": 0
+      }
+    }
+  ],
+  "calls": [
+    {
+      "id": "b75e5854-6b5c-11e2-8432-f532df1e73c3",
+      "isExpanded": false,
+      "queue": "default_queue",
+      "media": "voice",
+      "customerName": "Client 1",
+      "customerCallerid": "1002",
+      "customerAvatar": null,
+      "line": "Line90",
+      "skillsRequired": [
+        "english"
+      ],
+      "skillsReq": "english",
+      "agMatch": "--",
+      "queuedSeconds": 9,
+      "tInQueue": "00:09",
+      "waitSeconds": 0,
+      "expecWait": "00:00"
+    },
+    {
+      "id": "b862a5e8-6b5c-11e2-8435-f532df1e73c3",
+      "isExpanded": false,
+      "queue": "default_queue",
+      "media": "voice",
+      "customerName": "Client 1",
+      "customerCallerid": "1003",
+      "customerAvatar": null,
+      "line": "Line90",
+      "skillsRequired": [
+        "english"
+      ],
+      "skillsReq": "english",
+      "agMatch": "--",
+      "queuedSeconds": 7,
+      "tInQueue": "00:07",
+      "waitSeconds": 0,
+      "expecWait": "00:00"
+    },
+    {
+      "id": "b9638174-6b5c-11e2-8438-f532df1e73c3",
+      "isExpanded": false,
+      "queue": "default_queue",
+      "media": "voice",
+      "customerName": "Client 1",
+      "customerCallerid": "1004",
+      "customerAvatar": null,
+      "line": "Line90",
+      "skillsRequired": [
+        "english"
+      ],
+      "skillsReq": "english",
+      "agMatch": "--",
+      "queuedSeconds": 6,
+      "tInQueue": "00:06",
+      "waitSeconds": 0,
+      "expecWait": "00:00"
+    }
+  ],
+  "callMediaFilter": [
+    "voice",
+    "voicemail"
+  ],
+  "filteredCalls": [
+    {
+      "id": "b75e5854-6b5c-11e2-8432-f532df1e73c3",
+      "isExpanded": false,
+      "queue": "default_queue",
+      "media": "voice",
+      "customerName": "Client 1",
+      "customerCallerid": "1002",
+      "customerAvatar": null,
+      "line": "Line90",
+      "skillsRequired": [
+        "english"
+      ],
+      "skillsReq": "english",
+      "agMatch": "--",
+      "queuedSeconds": 9,
+      "tInQueue": "00:09",
+      "waitSeconds": 0,
+      "expecWait": "00:00"
+    },
+    {
+      "id": "b862a5e8-6b5c-11e2-8435-f532df1e73c3",
+      "isExpanded": false,
+      "queue": "default_queue",
+      "media": "voice",
+      "customerName": "Client 1",
+      "customerCallerid": "1003",
+      "customerAvatar": null,
+      "line": "Line90",
+      "skillsRequired": [
+        "english"
+      ],
+      "skillsReq": "english",
+      "agMatch": "--",
+      "queuedSeconds": 7,
+      "tInQueue": "00:07",
+      "waitSeconds": 0,
+      "expecWait": "00:00"
+    },
+    {
+      "id": "b9638174-6b5c-11e2-8438-f532df1e73c3",
+      "isExpanded": false,
+      "queue": "default_queue",
+      "media": "voice",
+      "customerName": "Client 1",
+      "customerCallerid": "1004",
+      "customerAvatar": null,
+      "line": "Line90",
+      "skillsRequired": [
+        "english"
+      ],
+      "skillsReq": "english",
+      "agMatch": "--",
+      "queuedSeconds": 6,
+      "tInQueue": "00:06",
+      "waitSeconds": 0,
+      "expecWait": "00:00"
+    }
+  ],
+  "customerList": [
+    "Farhampton Inn",
+    "GNB",
+    "Maclaren's Pub"
+  ],
+  "lineList": [
+    "Line80",
+    "Line81",
+    "Line90",
+    "Line91"
+  ],
+  "skillList": [
+    "english",
+    "german"
+  ],
+  "queueList": [
+    "EnglishQueue",
+    "GermanQueue",
+    "default_queue",
+    "transfer_queue"
+  ],
+  "callsSortIsAscendingMap": {
+    "customerName": true,
+    "line": true,
+    "skillsReq": true,
+    "agMatch": true,
+    "tInQueue": true,
+    "expecWait": true
+  },
+  "callsSortKey": "tInQueue",
+  "intervalId": 128
+}

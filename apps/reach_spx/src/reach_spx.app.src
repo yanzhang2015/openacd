@@ -1,0 +1,12 @@
+{application, reach_spx,
+[{description, "OpenACD and sipXecs integration"},
+{vsn, "2.0"},
+{registered, [
+	oacd_spx_sup,
+	spx_autoloader
+	]},
+{applications, [kernel, stdlib, ssl, lager, erlmongo, xmerl, ejrpc2, reach_core, reach_freeswitch, reach_dialplan]},
+{mod, {oacd_spx_app, []}},
+{modules, [@ERLAPP_MODS_LIST@]},
+{start_phases, []}
+]}.

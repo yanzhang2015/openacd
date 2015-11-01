@@ -1,0 +1,245 @@
+<div id="main-view" class="gadget-row">
+
+  <div class="section-content">
+
+    <div id="outbound-call" class="row-fluid">
+      <div class="row-fluid">
+        <div id="call-state-symbol" class="released" data-class="ocSessionStateIcon"></div>
+
+        <div>
+          <label class="styled media-solutions" data-class="ocCustomerDropdownContainer">
+            <select data-class="ocCustomerDropdown">
+            </select>
+          </label>
+
+          <div class="row-fluid" data-class="ocVisibleWhenOncall" style="display: none;">
+            <div id="call-duration">
+              <p data-class="ocOutboundTimer">00:00</p>
+            </div>
+            <button id="call-status" class="not-yet-implemented" disabled>done</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-fluid" id="outbound-text-dialer" data-class="ocCallForm" style="display: none;">
+        <input type="text" id="call-text-input" value="" placeholder="enter a number..." data-class="ocDestinationInput">
+        <button id="call-button" data-class="ocCallButton">
+          <i class="icon-call_outgoing"></i>
+        </button>
+      </div>
+
+      <!-- to simulate hold, add a "hold" class to #outbound-current-call", and for the dark greenish background add a "wrap" class-->
+      <div id="outbound-current-call" class="row-fluid" data-class="ocCallControls" style="display:none;">
+        <div class="outgoing-call">
+          <div class="outgoing-call-duration" data-class="ocVisibleWhenOncall">
+            <p data-class="ocHoldTimer">
+              00:00
+            </p>
+          </div>
+
+          <!--".outbound-button" button IDs: hold, remove, play, stop-->
+          <button id="hold" class="outbound-button left" data-class="ocHoldButton"><i>
+            <span></span>
+          </i></button>
+          <button id="remove" class="outbound-button right" data-class="ocHangupButton"><i>
+            <span></span>
+          </i></button>
+        </div>
+
+        <div class="outgoing-call-right" data-class="ocVisibleWhenOncall">
+          <p class="not-yet-implemented">
+            <strong>Kelly Davis</strong>, Sales Manager<br>
+            Media Solutions<br>
+            832 734 9844 (Office)
+          </p>
+          <label class="styled call-disposition not-yet-implemented">
+            <select data-class="">
+              <option>call disposition...</option>
+            </select>
+          </label>
+          <div class="transfer-box">
+            <button class="transfer-button" data-class="ocTransConfButton">
+              <i class="icon-transfer-arrow"></i>
+            </button>
+
+            <label class="styled transfer">
+              <select data-class="ocTransConfSelect">
+                <option>transfer...</option>
+              </select>
+            </label>
+            <input type="text" class="transfer-number-text" value="" placeholder="enter a number..." data-class="ocTransConfNumber">
+          </div>
+
+          <button class="mic-button not-yet-implemented">
+            <i class="icon-volume_mic"></i>
+          </button>
+
+          <button class="speaker-button not-yet-implemented">
+            <i class="icon-volume_speaker_2"></i>
+          </button>
+
+        </div>
+      </div><!--END outbound-current-call-->
+    </div><!--END outbound-call-->
+  </div>
+</div>
+
+
+<div id="dialpad-view" class="gadget-row row-fluid not-yet-implemented">
+  <div class="header-h4" data-class="gadgetSectionHeader">
+    <span class="header-arrow arrow-icon arrow-down align-left"></span>
+
+    <h4 class="gadget-row-title span9 tight">Dialpad</h4>
+  </div>
+  <div class="section-content">
+
+    <table id="dialpad">
+      <tr>
+        <td><button class="num-dial-button">1</button></td>
+
+        <td><button class="num-dial-button">2</button></td>
+
+        <td><button class="num-dial-button">3</button></td>
+
+        <td rowspan="2"><button class="dialer-side">
+          <i class="icon-redial"></i>
+        </button></td>
+      </tr>
+
+      <tr>
+        <td><button class="num-dial-button">4</button></td>
+
+        <td><button class="num-dial-button">5</button></td>
+
+        <td><button class="num-dial-button">6</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="num-dial-button">7</button></td>
+
+        <td><button class="num-dial-button">8</button></td>
+
+        <td><button class="num-dial-button">9</button></td>
+
+        <td rowspan="2"><button class="dialer-side">
+          <i class="icon-call_outgoing"></i>
+        </button></td>
+      </tr>
+
+      <tr>
+        <td><button class="num-dial-button">*</button></td>
+
+        <td><button class="num-dial-button">0</button></td>
+
+        <td><button class="num-dial-button">#</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div id="phonebook-view" class="gadget-row row-fluid not-yet-implemented">
+  <div class="header-h4" data-class="gadgetSectionHeader">
+    <span class="header-arrow arrow-icon arrow-down align-left"></span>
+
+    <h4 class="gadget-row-title span9 tight">Phonebook</h4>
+  </div>
+  <div class="section-content">
+    <div id="contact-list">
+      <div class="chat-contact row-fluid">
+        <span class="span2 tight">
+          <span class="media-ico-client"></span>
+        </span>
+
+        <span class="span8 tight contact-text">
+          <strong>Paul Alison</strong><br>
+          Sales agent<br>
+          Denver, Colorado
+        </span>
+
+        <div class="span2 tight">
+          <div class="row-fluid">
+            <button class="call-button">
+              <i class="icon-phone_mobile"></i>
+            </button>
+          </div>
+        </div>
+      </div><!-- /chat contact -->
+      <div class="chat-contact row-fluid">
+        <span class="span2 tight">
+          <span class="media-ico-client"></span>
+        </span>
+
+        <span class="span8 tight contact-text">
+          <strong>Paul Alison</strong><br>
+          Sales agent<br>
+          Denver, Colorado
+        </span>
+
+        <div class="span2 tight">
+          <div class="row-fluid">
+            <button class="call-button">
+              <i class="icon-phone_mobile"></i>
+            </button>
+          </div>
+        </div>
+      </div><!-- /chat contact -->
+      <div class="chat-contact row-fluid">
+        <span class="span2 tight">
+          <span class="media-ico-client"></span>
+        </span>
+
+        <span class="span8 tight contact-text">
+          <strong>Paul Alison</strong><br>
+          Sales agent<br>
+          Denver, Colorado
+        </span>
+
+        <div class="span2 tight">
+          <div class="row-fluid">
+            <button class="call-button">
+              <i class="icon-phone_mobile"></i>
+            </button>
+          </div>
+        </div>
+      </div><!-- /chat contact -->
+      <div class="chat-contact row-fluid">
+        <span class="span2 tight">
+          <span class="media-ico-client"></span>
+        </span>
+
+        <span class="span8 tight contact-text">
+          <strong>Paul Alison</strong><br>
+          Sales agent<br>
+          Denver, Colorado
+        </span>
+
+        <div class="span2 tight">
+          <div class="row-fluid">
+            <button class="call-button">
+              <i class="icon-phone_mobile"></i>
+            </button>
+          </div>
+        </div>
+      </div><!-- /chat contact -->
+      <div class="chat-contact row-fluid">
+        <span class="span2 tight">
+          <span class="media-ico-client"></span>
+        </span>
+
+        <span class="span8 tight contact-text">
+          <strong>Paul Alison</strong><br>
+          Sales agent<br>
+          Denver, Colorado
+        </span>
+
+        <div class="span2 tight">
+          <div class="row-fluid">
+            <button class="call-button">
+              <i class="icon-phone_mobile"></i>
+            </button>
+          </div>
+        </div>
+      </div><!-- /chat contact -->
+    </div>
+  </div>
+</div><!--END phonebook-view -->

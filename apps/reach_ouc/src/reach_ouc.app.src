@@ -1,0 +1,30 @@
+{application, reach_ouc, [
+{description, "OpenUC dashboard and API additions to Reach"},
+{vsn, "14.10.0"},
+{registered, [
+	oacd_ouc_sup,
+    ouc_db_redis,
+	ouc_agent_profiles,
+	ouc_web
+]},
+{applications, [
+	kernel,
+	stdlib,
+	ssl,
+	edoc,
+    ranch,
+	cowboy,
+	mimetypes,
+	lager,
+	erlydtl,
+	erlmongo,
+    eredis,
+	ibrowse,
+	ej,
+	erlando,
+	reach_core
+]},
+{modules, [@ERLAPP_MODS_LIST@]},
+{mod, { oacd_ouc_app, []}},
+{env, []}
+]}.

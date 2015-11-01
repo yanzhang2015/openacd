@@ -1,0 +1,19 @@
+{application, reach_web, [
+{description, "OpenACD Web Plug-in"},
+{vsn, "2.0.0"},
+{registered, [
+	oacd_web_sup,
+	cpx_agent_web_listener
+]},
+{applications, [
+	kernel,
+	stdlib,
+	lager,
+	%cowboy,
+	mimetypes,
+	inets
+]},
+{modules, [@ERLAPP_MODS_LIST@]},
+{mod, { oacd_web_app, []}},
+{env, []}
+]}.

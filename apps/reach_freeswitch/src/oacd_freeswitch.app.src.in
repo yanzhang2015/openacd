@@ -1,0 +1,14 @@
+{application, @APP_NAME@, [
+    %% todo: clean as it seems deprecated
+	{description, "Freeswitch media plugin for OpenACD"},
+	{vsn, "@PACKAGE_VERSION@"},
+	{modules, []},
+	{registered, [
+		freeswitch_media_manager
+	]},
+	{mod, {oacd_freeswitch_app, []}},
+	{env, []},
+	{applications, [kernel, stdlib, lager]},
+	{start_phases, []},
+	{included_applications, []}
+]}.

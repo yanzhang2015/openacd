@@ -1,0 +1,47 @@
+ERLAPP_NAME ?= $(notdir $(CURDIR))
+ERLAPP_SRC = $(shell cd $(srcdir); find src -name '*.erl')
+ERLAPP_TEST = $(shell cd $(srcdir); find test -name '*.erl')
+ERLAPP_TEMPLATES = $(shell cd $(srcdir); test -d templates && find templates -name '*.dtl')
+ERLAPP_TEST_BEAM = $(ERLAPP_TEST:.erl=.beam)
+ERLAPP_MODS = $(strip $(patsubst src/%.erl,%,$(ERLAPP_SRC)) $(patsubst templates/%.dtl,%_dtl,$(ERLAPP_TEMPLATES)))
+ERLAPP_BEAM = $(foreach M,$(ERLAPP_MODS),ebin/$(M).beam)
+ERLAPP_LIBS = $(top_builddir)/deps:$(top_builddir)/apps
+ERLAPP_MODS_LIST = $(subst $(space),$(comma)$(space),$(ERLAPP_MODS))
+ERLC_OPTS += +'{parse_transform,lager_transform}'
+ERLAPP_INCLUDES = $(wildcard $(top_srcdir)/apps/*/include)
+ERLAPP_INCLUDE_PATH = $(subst $(space),:,$(ERLAPP_INCLUDES))
+ERLAPP_INCLUDE_SRC = $(wildcard $(ERLAPP_INCLUDES:=/*.hrl))
+EDOC_OPTS = {source_path, ["$(srcdir)/src"]}
+
+ebin :
+	mkdir $@
+
+ebin/%_dtl.beam : templates/%.dtl
+	ERL_LIBS=$(ERLAPP_LIBS) $(ERL) -noshell -eval "\
+	  Compile = fun(F) -> \
+	    Module = list_to_atom( \
+	      string:to_lower(filename:basename(F, \".dtl\")) ++ \"_dtl\"), \
+		erlydtl_compiler:compile(F, Module, [{out_dir, \"ebin/\"}]) \
+	  end, \
+	  _ = [Compile(F) || F <- string:tokens(\"$(<)\", \" \")], \
+	  init:stop() \
+	"
+
+ebin/%.beam : src/%.erl $(ERLAPP_INCLUDE_SRC)
+	ERL_LIBS=$(ERLAPP_LIBS) $(ERLC) -v $(ERLC_OPTS) -o ebin/ -I $(srcdir)/include -I $(top_srcdir)/apps $< $@
+
+ebin/%.app : src/%.app.src $(ERLAPP_SRC) Makefile
+	@$(call SearchAndReplace,$<,$@,$(EXTRA_REPLACE) ERLAPP_MODS_LIST)
+
+erlapp-check : $(ERLAPP_BEAM)
+	@echo "Not implemented in makefile yet"
+
+test/%.beam : test/%.erl
+	ERL_LIBS=$(ERLAPP_LIBS) $(ERLC) -v $(ERLC_OPTS) -DTEST=1 -o test/ -I $(srcdir)/include/ $< $@
+
+run_tests:
+	erl -pa ebin/ -pa test/ -noshell\
+        -eval 'eunit:test({dir, "test"},[verbose, {report,{eunit_surefire,[{dir,"./test/"}]}}]), init:stop()'
+
+clean-ebin :
+	! test -d ebin || rm -rf ebin

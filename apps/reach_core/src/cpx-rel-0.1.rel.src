@@ -1,0 +1,14 @@
+% a basic release file.
+{release,
+	{"cpx_1", "0.9.5"},
+	erts,
+	[
+		kernel,
+		stdlib,
+		sasl,
+		mnesia,
+		crypto,
+		inets,
+		{cpx, "0.9.5"}
+	]
+}.

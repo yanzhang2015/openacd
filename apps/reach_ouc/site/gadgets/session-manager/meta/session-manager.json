@@ -1,0 +1,11 @@
+{
+  "id": "session-manager-gadget",
+  "title": "Session Manager",
+  "stylesheet": "gadgets/session-manager/styles/session-manager.css",
+  "raw_stylesheet": "gadgets/session-manager/styles/session-manager.less",
+  "container_class": "session-manager-gadget",
+  "size_x": 2,
+  "width": 540,
+  "init_height": 160,
+  "supervisor": false
+}

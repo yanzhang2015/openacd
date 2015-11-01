@@ -1,0 +1,112 @@
+{
+  "recordings": [
+    {
+      "callId": "uuid",
+      "url": "http://localhost/~kristinemina/dev/openucvagrant/test.wav",
+      "startTs": 1382427155883,
+      "callerId": "test",
+      "callerAni": "701",
+      "skills": [
+        "sales",
+        "german"
+      ],
+      "customer": "Test",
+      "customerAvatar": null,
+      "queue": "default_queue",
+      "line": "SalesGerman382",
+      "agent": "801",
+      "duration": 8,
+      "isExpanded": false,
+      "playbackPosition": 0,
+      "isPaused": false,
+      "isStopped": true,
+      "skillsText": "sales, german",
+      "startDateText": "10 / 22 / 2013",
+      "startTimeText": "15:32:35",
+      "durationText": "00:08",
+      "sound": {}
+    },
+    {
+      "callId": "uuid2",
+      "url": "http://localhost/~kristinemina/dev/openucvagrant/test2.wav",
+      "startTs": 1382424203123,
+      "callerId": "test2",
+      "callerAni": "701",
+      "skills": [
+        "tech",
+        "english",
+        "german"
+      ],
+      "customer": "Acme Inc",
+      "customerAvatar": "https://oacddev.ezuce.com/sipxconfig/rest/avatar/openacdclient_AcmeInc",
+      "queue": "AcmeTechSupport",
+      "line": "TechSupport380",
+      "agent": "819",
+      "duration": 7,
+      "isExpanded": false,
+      "playbackPosition": 0,
+      "isPaused": false,
+      "isStopped": true,
+      "skillsText": "tech, english, german",
+      "startDateText": "10 / 22 / 2013",
+      "startTimeText": "14:43:23",
+      "durationText": "00:07",
+      "sound": {}
+    }
+  ],
+  "page": 1,
+  "recordingsCount": 0,
+  "recordingsPerPage": 13,
+  "lastRecording": 13,
+  "firstRecording": 1,
+  "callIdFilterBuffer": "",
+  "callIdFilter": "",
+  "startFilter": 1394035200000,
+  "endFilter": 1394207999999,
+  "callerIdFilterBuffer": "",
+  "callerIdFilter": "",
+  "agentFilterBuffer": "",
+  "agentFilter": "",
+  "filterOpts": {
+    "call_id": "",
+    "caller_id": "",
+    "agent": "",
+    "start_timestamp": {
+      "from": 1394035200000,
+      "to": 1394207999999
+    }
+  },
+  "queueList": [
+    "EnglishQueue",
+    "GermanQueue",
+    "default_queue",
+    "transfer_queue"
+  ],
+  "lineList": [
+    "Line80",
+    "Line81",
+    "Line90",
+    "Line91"
+  ],
+  "customerList": [
+    "Farhampton Inn",
+    "GNB",
+    "Maclaren's Pub"
+  ],
+  "skillList": [
+    "english",
+    "german"
+  ],
+  "sortIsAscendingMap": {
+    "start_timestamp": true,
+    "client": false,
+    "queue": true,
+    "line": true,
+    "agent": true,
+    "recording_ms": true
+  },
+  "sortedBy": "client",
+  "sortOpts": {
+    "client": 1
+  }
+}

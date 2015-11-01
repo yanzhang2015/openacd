@@ -1,0 +1,11 @@
+{
+  "id": "outbound-call-gadget",
+  "title": "Outbound Call",
+  "stylesheet": "gadgets/outbound-call/styles/outbound-call.css",
+  "raw_stylesheet": "gadgets/outbound-call/styles/outbound-call.less",
+  "container_class": "outbound-call-gadget",
+  "size_x": 1,
+  "width": 260,
+  "init_height": 985,
+  "supervisor": false
+}

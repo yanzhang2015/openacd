@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta http-equiv="content-type" content="text/html; charset=us-ascii">
+
+  <!-- NOTE FOR USING file:// protocol-->
+  <!-- prefix "href" attributes with oacd_ouc/priv/www folder location -->
+<!-- sample:
+<link rel="stylesheet" media="screen" href="file:///Users/kristinemina/dev/oacdvagrant/oacd/plugins/oacd_ouc/priv/www/styles/bootstrap/bootstrap.css">
+<link rel="stylesheet" media="screen" href="file:///Users/kristinemina/dev/oacdvagrant/oacd/plugins/oacd_ouc/priv/www/styles/bootstrap/font-awesome.css">
+<link rel="stylesheet" media="screen" href="file:///Users/kristinemina/dev/oacdvagrant/oacd/plugins/oacd_ouc/priv/www/styles/gadget.css">
+-->
+<link rel="stylesheet" media="screen" href="../styles/jquery-ui-1.10.3.custom.css">
+<link rel="stylesheet" media="screen" href="../styles/bootstrap.css">
+<link rel="stylesheet" media="screen" href="../styles/icomoon.css">
+<link rel="stylesheet" media="screen" href="../styles/gadget.css">
+<script type="text/javascript">
+var require = {
+  urlArgs : "bust="+new Date().getTime()
+};
+</script>
+
+<!-- NOTE FOR USING file:// protocol-->
+<!-- prefix "data-main" and "src" attributes with oacd_ouc/priv/www folder location -->
+<!-- sample:
+<script id="main-script" data-main="file:///Users/kristinemina/dev/oacdvagrant/oacd/plugins/oacd_ouc/priv/www/gadgets/test-page" src="file:///Users/kristinemina/dev/oacdvagrant/oacd/plugins/oacd_ouc/priv/www/scripts/lib/require/require.js"></script>
+-->
+
+<script id="main-script" data-main="../gadgets/test-page" src="../scripts/lib/require/require.js"></script>
+</head>
+
+<body>
+  <div style="float:left; margin: 20px !important;">
+    <h3>Gadget Preview</h3>
+    <ul class="nav nav-tabs">
+      <li>
+        <a href="#agent-manager">Agent Manager</a>
+      </li>
+      <li>
+        <a href="#agent-state">Agent State</a>
+      </li>
+      <li>
+        <a href="#call-recording">Call Recording</a>
+      </li>
+      <li>
+        <a href="#my-statistics">My Statistics</a>
+      </li>
+      <li>
+        <a href="#outbound-call">Outbound Call</a>
+      </li>
+      <li>
+        <a href="#queue-manager">Queue Manager</a>
+      </li>
+      <li>
+        <a href="#session-manager">Session Manager</a>
+      </li>
+    </ul>
+  </div>
+  <div class="clearfix"></div>
+
+
+    <div style="float:left; margin: 20px !important;">
+        <ul><li>
+      <div class="gadget">
+        <div class="gadget-content" style="outline: 3px dotted #ccc;">
+          <!-- templates/gadget.html goes here -->
+        </div>
+      </div> <!--/gadget-->
+    </li></ul>
+    </div>
+    <div id="view-model-json" style="float:left; margin: 20px !important;">
+      <h2>View Model</h2>
+      <textarea data-class="viewModelValues" style="width: 450px; height: 360px;"></textarea>
+    </div>
+
+  </body>
+
+  </html>

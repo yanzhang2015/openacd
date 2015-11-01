@@ -1,0 +1,11 @@
+{
+  "id": "call-recording-gadget",
+  "title": "Call Recording",
+  "stylesheet": "gadgets/call-recording/styles/call-recording.css",
+  "raw_stylesheet": "gadgets/call-recording/styles/call-recording.less",
+  "container_class": "call-recording-gadget",
+  "size_x": 3,
+  "width": 820,
+  "init_height": 600,
+  "supervisor": true
+}

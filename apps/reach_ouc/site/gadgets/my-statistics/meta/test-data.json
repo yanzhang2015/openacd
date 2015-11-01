@@ -1,0 +1,179 @@
+{
+  "rollingStats": [
+    {
+      "duration": "last_30m",
+      "customers": [
+        {
+          "cpt": 6.4,
+          "asa": 3.8,
+          "longest": 9,
+          "name": "Client 1"
+        }
+      ],
+      "average": {
+        "cpt": 6.4,
+        "myCpt": null,
+        "occup": null,
+        "asa": 3.8,
+        "longest": 9
+      }
+    },
+    {
+      "duration": "last_hr",
+      "customers": [
+        {
+          "cpt": 6.4,
+          "asa": 3.8,
+          "longest": 9,
+          "name": "Client 1"
+        }
+      ],
+      "average": {
+        "cpt": 6.4,
+        "myCpt": null,
+        "occup": null,
+        "asa": 3.8,
+        "longest": 9
+      }
+    },
+    {
+      "duration": "today",
+      "customers": [
+        {
+          "cpt": 6.4,
+          "asa": 3.8,
+          "longest": 9,
+          "name": "Client 1"
+        }
+      ],
+      "average": {
+        "cpt": 6.4,
+        "myCpt": null,
+        "occup": null,
+        "asa": 3.8,
+        "longest": 9
+      }
+    },
+    {
+      "duration": "this_week",
+      "customers": [
+        {
+          "cpt": 6.4,
+          "asa": 3.8,
+          "longest": 9,
+          "name": "Client 1"
+        }
+      ],
+      "average": {
+        "cpt": 6.4,
+        "myCpt": null,
+        "occup": null,
+        "asa": 3.8,
+        "longest": 9
+      }
+    },
+    {
+      "duration": "this_month",
+      "customers": [
+        {
+          "cpt": 6.4,
+          "asa": 3.8,
+          "longest": 9,
+          "name": "Client 1"
+        }
+      ],
+      "average": {
+        "cpt": 6.4,
+        "myCpt": null,
+        "occup": null,
+        "asa": 3.8,
+        "longest": 9
+      }
+    }
+  ],
+  "liveClientStats": [
+    {
+      "name": "Client 1",
+      "ciq": 0,
+      "idle": 2,
+      "inSession": 0,
+      "wrapup": 0,
+      "ringing": 0,
+      "agents": 2
+    }
+  ],
+  "liveStatsTotal": {
+    "name": "total",
+    "ciq": 0,
+    "idle": 2,
+    "inSession": 0,
+    "wrapup": 0,
+    "ringing": 0,
+    "agents": 2
+  },
+  "customers": [
+    {
+      "name": "Client 1"
+    }
+  ],
+  "customer": "",
+  "durations": [
+    {
+      "name": "Last 30 Minutes",
+      "apiText": "last_30m"
+    },
+    {
+      "name": "Last Hour",
+      "apiText": "last_hr"
+    },
+    {
+      "name": "Today",
+      "apiText": "today"
+    },
+    {
+      "name": "This Week",
+      "apiText": "this_week"
+    },
+    {
+      "name": "This Month",
+      "apiText": "this_month"
+    }
+  ],
+  "duration": {
+    "name": "Last Hour",
+    "apiText": "last_hr"
+  },
+  "media": "voice",
+  "profileName": "Default",
+  "skills": [],
+  "skillsText": "",
+  "rollingStatDisplay": {
+    "cpt": 6.4,
+    "myCpt": null,
+    "occup": null,
+    "asa": 3.8,
+    "longest": 9
+  },
+  "cptText": "00:06",
+  "myCptText": "--",
+  "asaText": "00:04",
+  "longestText": "00:09",
+  "occupText": "--",
+  "cToVmText": "--",
+  "liveStatDisplay": {
+    "name": "total",
+    "ciq": 0,
+    "idle": 2,
+    "inSession": 0,
+    "wrapup": 0,
+    "ringing": 0,
+    "agents": 2
+  },
+  "ciqText": 0,
+  "agentsText": 2,
+  "idleBarWidth": "100%",
+  "inSessionBarWidth": "0%",
+  "wrapupBarWidth": "0%",
+  "ringingBarWidth": "0%",
+  "namespace": "my-statistics-gadget"
+}

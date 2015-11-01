@@ -1,0 +1,11 @@
+{
+  "id": "agent-manager-gadget",
+  "title": "Agent Manager",
+  "stylesheet": "gadgets/agent-manager/styles/agent-manager.css",
+  "raw_stylesheet": "gadgets/agent-manager/styles/agent-manager.less",
+  "container_class": "agent-manager-gadget",
+  "size_x": 3,
+  "width": 820,
+  "init_height": 755,
+  "supervisor": true
+}

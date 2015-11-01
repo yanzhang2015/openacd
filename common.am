@@ -1,0 +1,23 @@
+
+REL_VSN = 2.0
+
+ERTS_VSN = \
+	$(shell $(ERL) -noshell -eval 'io:format("~s", [erlang:system_info(version)]), halt().')
+
+EXTRA_REPLACE = \
+	$(filter reach%,$(.VARIABLES)) \
+	$(filter %VSN,$(.VARIABLES)) \
+	SSH_KEYGEN
+
+reachetcdir = $(SIPX_CONFDIR)/reach
+reachlibdir = $(SIPX_LIBDIR)/reach
+reachbindir = $(reachlibdir)/bin
+reachrundir = $(SIPX_RUNDIR)
+reachlogdir = $(SIPX_LOGDIR)
+reachkeydir = $(SIPX_VARDIR)/key
+reachvardir = $(SIPX_VARDIR)/reach
+reachdbdir = $(reachvardir)/db
+reachpipedir = $(reachvardir)/pipe
+reachkey = $(reachkeydir)/reach.key
+reachmongocfg = $(SIPX_CONFDIR)/mongo-client.ini
+reachsitedir = $(localstatedir)/www/reach

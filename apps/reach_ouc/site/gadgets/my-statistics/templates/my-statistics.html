@@ -1,0 +1,151 @@
+<div id="my-statistics" class="gadget-row">
+  <div class="stats-controls" class="row-fluid">
+    <div class="first">
+      <span id="media-buttons" class="span not-yet-implemented">
+                <button class="phone-button" data-class="msMediaVoice">
+          <i class="icon-phone_mobile"></i>
+        </button>
+        <button class="email-button" data-class="msMediaEmail">
+          <i class="icon-mail"></i>
+        </button>
+        <button class="voicemail-button" data-class="msMediaVoicemail">
+          <i class="icon-voicemail"></i>
+        </button>
+      </span>
+
+
+      <label class="styled customers">
+        <select data-class="msCustomerDropdown">
+          <option>All Customers</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="last">
+      <label class="styled">
+        <select data-class="msDurationDropdown">
+          <option>Last Hour</option>
+        </select>
+      </label>
+      <div class="stats-details">
+        <p>
+          <span class="detail-label">Profile Name: </span>
+          <span data-class="msProfileName"></span>
+        </p>
+        <p>
+          <span class="detail-label">Skills: </span>
+          <span data-class="msSkills"></span>
+        </p>
+      </div>
+    </div>
+  </div><!-- end first row of my stats -->
+
+  <div class="row-fluid">
+    <div id="stats-table">
+    <table id="stats-table">
+      <tbody>
+        <tr>
+          <td id="ciq" class="box">
+            <table id="ciq-inner-table">
+              <tr>
+                <td colspan="2" id="ciq-cell">
+                  <div class="inner-box">
+                    CIQ<br>
+                    <span class="value" data-class="msCiqSelected"></span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="last not-yet-implemented">
+                <td class="bg-lightgreen" data-class="msCiqLeft"></td>
+                <td class="bg-lightgreen last" data-class="msCiqRight"></td>
+              </tr>
+            </table>
+          </td>
+
+          <td class="bg-lightgreen box">
+            <div class="inner-box">
+              Agents<br>
+              <span class="value" data-class="msAgents"></span>
+            </div>
+          </td>
+
+          <td id="progress-td">
+            <div class="progress progress-lightblue">
+              <div class="bar" data-class="msReleasedBar">
+                <span class="progress-text">Released</span>
+              </div>
+            </div>
+
+            <div class="progress progress-orange">
+              <div class="bar" data-class="msIdleBar">
+                <span class="progress-text">Idle</span>
+              </div>
+            </div>
+
+            <div class="progress progress-orange">
+              <div class="bar" data-class="msRingingBar">
+                <span class="progress-text">Ringing</span>
+              </div>
+            </div>
+
+            <div class="progress progress-green">
+              <div class="bar" data-class="msInSessionBar">
+                <span class="progress-text">In Session</span>
+              </div>
+            </div>
+
+            <div class="progress progress-orange last">
+              <div class="bar" data-class="msWrapupBar">
+                <span class="progress-text">Wrap-up</span>
+              </div>
+            </div>
+          </td>
+
+          <td class="bg-lightblue box">
+            <div class="inner-box">
+              My CPT<br>
+              <span class="value" data-class="msMyCpt">--</span>
+            </div>
+          </td>
+
+          <td class="bg-lightblue box">
+            <div class="inner-box">
+              CPT<br>
+              <span class="value" data-class="msCpt">--</span>
+            </div>
+          </td>
+
+          <td class="bg-lightblue box">
+            <div class="inner-box">
+              Occup.<br>
+              <span class="value" data-class="msOccup">--</span>
+            </div>
+          </td>
+
+          <td class="bg-lightblue box">
+            <div class="inner-box">
+              ASA<br>
+              <span class="value" data-class="msAsa">--</span>
+            </div>
+          </td>
+
+          <td class="bg-lightblue box">
+            <div class="inner-box">
+              Longest<br>
+              <span class="value" data-class="msLongest">--</span>
+            </div>
+          </td>
+
+          <td class="bg-lightblue box last not-yet-implemented">
+            <div class="inner-box">
+              C to VM<br>
+              <span class="value" data-class="msCToVm">--</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!--end stats-table div-->
+  </div>
+</div><!-- END #my-statistics -->

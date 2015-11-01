@@ -1,0 +1,177 @@
+<div class="call-recording-gadget-content row-fluid">
+  <div id="filters" class="span3">
+    <div id="filter-heading">
+      Filter
+    </div>
+    <input data-class="crCallIdFilter" class="search-for-call-id" type="text" placeholder="Search for Call ID…">
+
+    <label id="datetime">Date / Time:</label>
+    <div class="input-prepend input-append row-fluid">
+      <span class="add-on">Start:</span>
+      <input data-class="crStartFilter" class="start-time" type="text" value="8/1/2013">
+      <span class="add-on"><i class="icon-calendar"></i></span>
+    </div>
+    <div class="input-prepend input-append row-fluid">
+      <span class="add-on">End:</span>
+      <input data-class="crEndFilter" class="end-time" type="text" value="8/1/2013">
+      <span class="add-on"><i class="icon-calendar"></i></span>
+    </div>
+
+    <label id="queue">Queue:</label>
+    <label data-class="crQueueFilterBg" class="styled">
+      <select data-class="crQueueFilter">
+        <option>Select Queue...</option>
+      </select>
+    </label>
+
+    <label>Line:</label>
+    <label data-class="crLineFilterBg" class="styled">
+      <select data-class="crLineFilter">
+        <option>Select Line...</option>
+      </select>
+    </label>
+
+    <label>Customer:</label>
+    <label data-class="crCustomerFilterBg" class="styled">
+      <select data-class="crCustomerFilter">
+        <option>Select Customer...</option>
+      </select>
+    </label>
+
+    <label>Caller ID:</label>
+    <input data-class="crCallerIdFilter" class="search-for-caller-id" type="text" placeholder="Search for Caller ID…">
+
+    <label>Agent:</label>
+    <input data-class="crAgentFilter" class="search-for-agent" type="text" placeholder="Search for Agent…">
+
+    <label>Skill:</label>
+    <label data-class="crSkillFilterBg" class="styled">
+      <select data-class="crSkillFilter">
+        <option>Select Skill...</option>
+      </select>
+    </label>
+  </div>
+  <div id="call-tables" class="span9">
+    <!--states: expand, or leave this blank-->
+    <table id="calls-table">
+      <thead>
+        <tr>
+          <th data-class="crCollapseAll" class="expand-arrow" title="collapse all"><div>
+            <i class="icon-arrow-right"></i>
+          </div></th>
+          <th data-class="crSortByStart" class="date-start-time"><div>Date/Start Time</div></th>
+          <th data-class="crSortByCustomer" class="customer"><div>Customer</div></th>
+          <th data-class="crSortByQueue" class="queue"><div>Queue</div></th>
+          <th data-class="crSortByLine" class="line"><div >Line</div></th>
+          <th data-class="crSortByAgent" class="agent"><div >Agent</div></th>
+          <th data-class="crSortByDuration" class="recording"><div>Recording</div></th>
+        </tr>
+        <tr id="header-arrows">
+          <td class="expand-arrow"><div>
+            &nbsp;
+          </div></td>
+          <td data-class="crSortByStart" class="date-start-time"><div>
+            <i class="icon-arrow-down"></i>
+          </div></td>
+          <td data-class="crSortByCustomer" class="customer"><div><i class="icon-arrow-down"></i></div></td>
+          <td data-class="crSortByQueue" class="queue"><div><i class="icon-arrow-down"></i></div></td>
+          <td data-class="crSortByLine" class="line"><div><i class="icon-arrow-down"></i></div></td>
+          <td data-class="crSortByAgent" class="agent"><div ><i class="icon-arrow-down"></i></div></td>
+          <td data-class="crSortByDuration" class="recording"><div><i class="icon-arrow-down"></i></div></td>
+        </tr>
+        <tr class="bg-lightgray" data-class="crNoMatchMessage">
+          <td colspan="7">
+            <div class="well-small text-center">No records match the filter</div>
+          </td>
+        </tr>
+      </thead>
+      <tbody data-class="crRecordings">
+        <!-- REGULAR ROW -->
+        <tr data-class="crRecording">
+          <td data-class="crRecordingArrow" class="expand-arrow"><div>
+            <i></i>
+          </div></td>
+          <td class="date-start-time"><div class="row-fluid">
+            <span data-class="crRecordingStartDate" class="span7">mm / dd / yyyy</span>
+            <span data-class="crRecordingStartTime" class="span5">hh:mm:ss</span>
+          </div></td>
+          <td class="customer"><div>
+            <div class="customer-logo">
+              <img data-class="crRecordingCustomerAvatar" src="" />
+            </div>
+            <span data-class="crRecordingCustomerName"></span>
+          </div></td>
+          <td class="queue"><div data-class="crRecordingQueue"></div></td>
+          <td class="line"><div data-class="crRecordingLine"></div>
+          </td>
+          <td  class="agent"><div data-class="crRecordingAgent"></div></td>
+          <td class="recording"><div data-class="crRecordingDuration">mm:ss</div></td>
+        </tr>
+        <!-- END REGULAR ROW -->
+
+        <!-- EXPANDED VOICEMAIL -->
+        <tr data-class="crRecording" class="voicemail">
+          <td colspan="3">
+            <div class="voicemail-player">
+              <div data-class="crRecordingSlider crRecordingVisibleWhenPlayable" class="voicemail-slider"></div>
+              <div class="voicemail-buttons" class="row-fluid" data-class="crRecordingVisibleWhenPlayable">
+
+                <button data-class="crRecordingBackToStart" class="step-backward">
+                  <i class="icon-fast_rewind"></i>
+                </button>
+
+                <button data-class="crRecordingRewind10" class="rewind">
+                  <i class="icon-rewind"></i>
+                </button>
+
+                <button data-class="crRecordingRewind2" class="nudge-rewind">
+                  <i class="icon-arrow-left"></i>
+                </button>
+
+                <!--change class to pause toggle-->
+                <button data-class="crRecordingPlayback" class="circle pause">
+                  <div></div>
+                  <i></i>
+                </button>
+
+                <button data-class="crRecordingForward2" class="nudge-forward">
+                  <i class="icon-arrow-right"></i>
+                </button>
+
+                <button data-class="crRecordingForward10" class="forward">
+                  <i class="icon-forward"></i>
+                </button>
+
+                <button data-class="crRecordingDownload" class="download-folder">
+                  <i class="icon-download-folder"></i>
+                </button>
+              </div>
+              <div data-class="crSoundFileMessage"></div>
+            </div>
+          </td>
+          <td colspan="4" class="voicemail-call-details">
+            <div class="row-fluid">
+              <span class="span3">Call ID:</span>
+              <span data-class="crRecordingCallId" class="span9">uuid</span>
+            </div>
+            <div class="row-fluid">
+              <span class="span3">Caller ID:</span>
+              <span class="span9">
+                <span data-class="crRecordingCallerAni"></span>
+                &nbsp;/&nbsp;
+                <span data-class="crRecordingCallerId"></span>
+              </span>
+            </div>
+            <div class="row-fluid">
+              <span class="span3">Skills:</span>
+              <span data-class="crRecordingSkills" class="span9"></span>
+            </div>
+          </td>
+        </tr>
+        <!-- END EXPANDED VOICEMAIL-->
+      </tbody>
+    </table>
+    <button class="refresh pull-left" data-class="crRefresh">Refresh</button>
+    <div class="pagination pull-right" data-class="crPagination">
+  </div>
+</div>
